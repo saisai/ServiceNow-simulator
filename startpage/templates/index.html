@@ -1,0 +1,270 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ServiceNow simulator</title>
+        <link href="{% static '/css/styles.css' %}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}" />
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="layoutDefault">
+            <div id="layoutDefault_content">
+                <main>
+                    <!-- Navbar-->
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
+                        <div class="container px-5">
+                            <a class="navbar-brand text-white" href="127.0.0.1:8002">ServiceNow simulator</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto me-lg-5">
+                                    <li class="nav-item"><a class="nav-link" href="127.0.0.1:8002">Home</a></li>
+                                    <li class="nav-item dropdown dropdown-xl no-caret">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     Join
+                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end me-lg-n20 me-xl-n15 animated--fade-in-up" aria-labelledby="navbarDropdownPages" >
+                                            <div class="row g-0">
+                                                <div class="col-lg-4 p-lg-5">
+                                                    <h6 class="dropdown-header text-primary">Coordinator</h6>
+                                                    <a class="dropdown-item" href="127.0.0.1:8002">Create an account</a>
+                                                    <a class="dropdown-item" href="127.0.0.1:8002">Sign in</a>
+                                                    <div class="dropdown-divider border-0"></div>
+                                                    <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                </div>
+                                                <div class="col-lg-4 p-lg-5">
+                                                    <h6 class="dropdown-header text-primary">New Employee</h6>
+                                                    <a class="dropdown-item" href="127.0.0.1:8002">Create an account</a>
+                                                    <a class="dropdown-item" href="127.0.0.1:8002">Sign in</a>
+                                                    <div class="dropdown-divider border-0"></div>
+                                                    <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                </div>
+                                                <div class="col-lg-4 p-lg-5">
+                                                    <h6 class="dropdown-header text-primary">Develop this project</h6>
+                                                    <a class="dropdown-item" href="https://github.com/wojtekw0703/Service_Desk_Training_Center">Contribute</a>
+                                                    <a class="dropdown-item" href="#">Share your idea</a>
+                                                    <div class="dropdown-divider border-0"></div>
+                                                    <div class="dropdown-divider border-0 d-lg-none"></div>
+                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="127.0.0.1:8002">About</a></li> <!-- autoscrolling to below section about what is Service Desk Training Center-->
+                                    <li class="nav-item"><a class="nav-link" href="127.0.0.1:8002">Support</a></li>
+                                </ul>
+                                <a class="btn fw-500 ms-lg-4 btn-teal" href="127.0.0.1:8002"> <!-- add here a link to demo dashboard-->
+                                    Demo
+                                    <i class="ms-2" data-feather="arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Page Header-->
+                    <header class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+                        <div class="page-header-ui-content pt-10">
+                            <div class="container px-5">
+                                <div class="row gx-5 align-items-center">
+                                    <div class="col-lg-6" data-aos="fade-up">
+                                        <h1 class="page-header-ui-title">Build your confidence before start working</h1>
+                                        <p class="page-header-ui-text mb-5">The simulator of Service Now will help you to start your career in IT</p>
+                                        <a class="btn btn-teal fw-500 me-2" href="#!">  <!-- add here a hyperlink to join section -> New Employee -->
+                                            Get Started
+                                            <i class="ms-2" data-feather="arrow-right"></i>
+                                        </a>
+                                        <a class="btn btn-link fw-500" href="https://www.servicenow.com">Learn More </a>
+                                    </div>
+                                    <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"><img class="img-fluid" src="{% static 'assets/img/illustrations/windows.svg' %}" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-white">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </header>
+                    <section class="bg-white py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 text-center">
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="layers"></i></div>
+                                    <h3>Built for everyone</h3>
+                                    <p class="mb-0">Simple, similar UI to Service Now will speed up your entry to IT</p>
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-0">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="smartphone"></i></div>
+                                    <h3>Modern responsive design</h3>
+                                    <p class="mb-0">Featuring carefully crafted, mobile-first components, your end product will function beautifully on any device</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4"><i data-feather="code"></i></div>
+                                    <h3>Still improving</h3>
+                                    <p class="mb-0">Infinite process of making the simulator better and better </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+                    <section class="bg-light py-10">
+                        <div class="container px-5">
+                            <div class="row gx-5 align-items-center justify-content-center">
+                                <div class="col-md-9 col-lg-6 order-1 order-lg-0" data-aos="fade-right">
+                                    <div class="content-skewed content-skewed-right"><img class="content-skewed-item img-fluid shadow-lg rounded-3" src="C:\Users\Wojtek\Desktop\Capture.png" alt="" /></div>
+                                </div>
+                                <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0" data-aos="fade-left">
+                                    <div class="mb-5">
+                                        <h2>Here's What You Get</h2>
+                                        <p class="lead">Basic skills to be able to start your first job.  </p>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <div class="col-md-6 mb-4">
+                                            <h6>Your Buddy/Coordinator</h6>
+                                            <p class="mb-2 small">They will introduce you to a new environment</p>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <h6>Test tickets</h6>
+                                            <p class="mb-2 small mb-0">A set of test tickets to help you imagine real working conditions </p>
+                                        </div>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <div class="col-md-6 mb-4">
+                                            <h6>Monitoring your progress</h6>
+                                            <p class="mb-2 small mb-0">Your Coordinator or Buddy will be able to check your progress</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr class="m-0" />
+                    <section class="bg-light pt-10">
+                        <div class="container px-5">
+                            <div class="text-center mb-5">
+                                <h2>Pricing</h2>
+                            </div>
+                            <div class="row gx-5 z-1">
+                                <div class="col-lg-4 mb-5 mb-lg-n10" data-aos="fade-up" data-aos-delay="100">
+                                </div>
+                                <div class="col-lg-4 mb-5 mb-lg-n10" data-aos="fade-up">
+                                    <div class="card pricing h-100">
+                                        <div class="card-body p-5">
+                                            <div class="text-center">
+                                              
+                                                <div class="pricing-price">
+                                                    <sup>$</sup>
+                                                    0
+                                                </div>
+                                            </div>
+                                            <ul class="fa-ul pricing-list">
+                                                <li class="pricing-list-item">
+                                                    <span class="fa-li"><i class="far fa-check-circle text-teal"></i></span>
+                                                    <span class="text-dark"> ∞ users</span>
+                                                </li>
+                                                <li class="pricing-list-item">
+                                                    <span class="fa-li"><i class="far fa-check-circle text-teal"></i></span>
+                                                    <span class="text-dark">Contact with ServiceNow simulator support</span>
+                                                </li>
+                                                <li class="pricing-list-item">
+                                                    <span class="fa-li"><i class="far fa-check-circle text-teal"></i></span>
+                                                    <span class="text-dark">∞ amount of test tickets</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-lg-n10" data-aos="fade-up" data-aos-delay="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-dark">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+                    <section class="bg-dark py-10">
+                        <div class="container px-5">
+                        </div>
+                        <div class="svg-border-rounded text-white">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+                    <section class="bg-white pt-10">
+                        <div class="container px-5">                         
+                            <div class="row gx-5">
+                                <div class="col-lg-6 mb-lg-n10 mb-5 mb-lg-0 z-1">
+                                    <a class="card text-decoration-none h-100 lift" href="#!">
+                                        <div class="card-body py-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-stack icon-stack-xl bg-primary text-white flex-shrink-0"><i data-feather="activity"></i></div>
+                                                <div class="ms-4">
+                                                    <h5 class="text-primary">Work smarter, not harder</h5>
+                                                    <p class="card-text text-gray-600">Learn more how Service Now works before you started. Save your time and effort</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 mb-lg-n10 z-1">
+                                    <a class="card text-decoration-none h-100 lift" href="#!">
+                                        <div class="card-body py-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-stack icon-stack-xl bg-secondary text-white flex-shrink-0"><i data-feather="code"></i></div>
+                                                <div class="ms-4">
+                                                    <h5 class="text-secondary">Start contributing in this project</h5>
+                                                    <p class="card-text text-gray-600">Develop ServiceNow simulator at Github</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="svg-border-rounded text-light">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div>
+                    </section>
+                    <section class="bg-light py-10">
+                    </section>
+                    <hr class="m-0" />
+                </main>
+            </div>
+            <div id="layoutDefault_footer">
+                <footer class="footer pt-10 pb-5 mt-auto bg-light footer-light">
+                    <div class="container px-5">
+                        
+                        <hr class="my-5" />
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-md-6 small">Copyright &copy; ServiceNow simulator <script>document.write(/\d{4}/.exec(Date())[0])</script></div>
+                            <div class="col-md-6 text-md-end small">
+                                <a href="#!">Privacy Policy</a>
+                                &middot;
+                                <a href="#!">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true,
+            });
+        </script>
+    </body>
+</html>
