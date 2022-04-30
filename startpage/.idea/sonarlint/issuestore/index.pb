@@ -20,3 +20,13 @@ E
 startpage/settings.py,e\6\e6753abbbd84f0dc2d745842907197bfe15defad
 D
 templates/index.html,f\6\f69b8ce2e31684ae06f1b3e84821e07e3dfddb2f
+F
+templates/contact.html,7\f\7f50bc186c5d8c3260f8530e58ffb1e0559fb0ca
+D
+templates/about.html,5\8\58893e517e4076b20838ca69fba7259ba475306a
+U
+%templates/auth-login-coordinator.html,9\5\95f994e8fb771450e6f613656c7d467ca9ecbb24
+U
+%templates/auth-register-employee.html,8\f\8f2219379b30de76819faa72c58fc63a11d96ab5
+R
+"templates/auth-login-employee.html,0\0\0054e5fe424b31f134f242d0f7c462700e82084e
