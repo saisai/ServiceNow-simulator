@@ -5,6 +5,14 @@ def index(request):
     return render(request, 'index.html')
 
 
+def about(request):
+    return render(request, 'about.html')
+
+
+def support(request):
+    return render(request, 'contact.html')
+
+
 def coordinator_new_account(request):
     return render(request, 'auth-register-coordinator.html')
 

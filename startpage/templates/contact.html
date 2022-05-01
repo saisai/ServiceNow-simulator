@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Service Desk Training Center</title>
+        <title>ServiceNow simulator</title>
         <link href="{% static '/css/styles.css' %}" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="{% static '/assets/img/favicon.png' %}" />
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
     </head>
@@ -20,7 +20,7 @@
                     <!-- Navbar-->
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
                         <div class="container px-5">
-                            <a class="navbar-brand text-white" href="{% url 'index' %}">Service Desk Training Center</a>
+                            <a class="navbar-brand text-white" href="{% url 'index' %}">ServiceNow simulator</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto me-lg-5">
@@ -34,21 +34,21 @@
                                             <div class="row g-0">
                                                 <div class="col-lg-4 p-lg-5">
                                                     <h6 class="dropdown-header text-primary">Coordinator</h6>
-                                                    <a class="dropdown-item" href="{% url 'coordinator_sign_up' %}">Create an account</a>
+                                                    <a class="dropdown-item" href="{% url 'coordinator_new_account' %}">Create an account</a>
                                                     <a class="dropdown-item" href="{% url 'coordinator_sign_in' %}">Sign in</a>
                                                     <div class="dropdown-divider border-0"></div>
                                                     <div class="dropdown-divider border-0 d-lg-none"></div>
                                                 </div>
                                                 <div class="col-lg-4 p-lg-5">
                                                     <h6 class="dropdown-header text-primary">New Employee</h6>
-                                                    <a class="dropdown-item" href="{% url 'new_employee_sign_up' %}">Create an account</a>
-                                                    <a class="dropdown-item" href="{% url 'new_employee_sign_in' %}">Sign in</a>
+                                                    <a class="dropdown-item" href="{% url 'employee_new_account' %}">Create an account</a>
+                                                    <a class="dropdown-item" href="{% url 'employee_sign_in' %}}">Sign in</a>
                                                     <div class="dropdown-divider border-0"></div>
                                                     <div class="dropdown-divider border-0 d-lg-none"></div>
                                                 </div>
                                                 <div class="col-lg-4 p-lg-5">
                                                     <h6 class="dropdown-header text-primary">Develop this project</h6>
-                                                    <a class="dropdown-item" href="https://github.com/wojtekw0703/Service_Desk_Training_Center">Contribute</a>
+                                                    <a class="dropdown-item" href="https://github.com/wojtekw0703/ServiceNow-simulator">Contribute</a>
                                                     <a class="dropdown-item" href="#">Share your idea</a>
                                                     <div class="dropdown-divider border-0"></div>
                                                     <div class="dropdown-divider border-0 d-lg-none"></div>
@@ -58,10 +58,6 @@
                                     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li> <!-- autoscrolling to below section about what is Service Desk Training Center-->
                                     <li class="nav-item"><a class="nav-link" href="{% url 'support' %}">Support</a></li>
                                 </ul>
-                                <a class="btn fw-500 ms-lg-4 btn-teal" href="https://shop.startbootstrap.com/sb-ui-kit-pro">
-                                    Demo
-                                    <i class="ms-2" data-feather="arrow-right"></i>
-                                </a>
                             </div>
                         </div>
                     </nav>
@@ -250,7 +246,7 @@
                         </div> -->
                         <hr class="my-5" />
                         <div class="row gx-5 align-items-center">
-                            <div class="col-md-6 small">Copyright &copy; Service Desk Training Center <script>document.write(/\d{4}/.exec(Date())[0])</script></div>
+                            <div class="col-md-6 small">Copyright &copy; ServiceNow simulator <script>document.write(/\d{4}/.exec(Date())[0])</script></div>
                             <div class="col-md-6 text-md-end small">
                                 <a href="#!">Privacy Policy</a>
                                 &middot;
