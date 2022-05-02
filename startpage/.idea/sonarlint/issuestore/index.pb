@@ -30,3 +30,5 @@ U
 %templates/auth-register-employee.html,8\f\8f2219379b30de76819faa72c58fc63a11d96ab5
 R
 "templates/auth-login-employee.html,0\0\0054e5fe424b31f134f242d0f7c462700e82084e
+X
+(templates/auth-register-coordinator.html,8\1\81c88da4eeda913355003b434fe229289bd76d4d
