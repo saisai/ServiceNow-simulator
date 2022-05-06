@@ -13,6 +13,10 @@ def support(request):
     return render(request, 'contact.html')
 
 
+def demo_dashboard(request):
+    return render(request, 'demo.html')
+
+
 def coordinator_new_account(request):
     return render(request, 'auth-register-coordinator.html')
 

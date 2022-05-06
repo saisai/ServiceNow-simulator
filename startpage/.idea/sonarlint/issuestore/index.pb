@@ -32,3 +32,5 @@ R
 "templates/auth-login-employee.html,0\0\0054e5fe424b31f134f242d0f7c462700e82084e
 X
 (templates/auth-register-coordinator.html,8\1\81c88da4eeda913355003b434fe229289bd76d4d
+C
+templates/demo.html,7\d\7d9fdfde5297833446d50fa665fb19f1acd9877c
