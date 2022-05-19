@@ -1,14 +1,17 @@
 from django.contrib import admin
 from django.urls import path
+from .views import NewAccountView, SignInView, UserView, LogoutView
 from . import views
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('about', views.about, name='about'),
-    path('support', views.support, name='support'),
-    path('demo', views.demo_dashboard, name='demo_dashboard'),
-    path('coordinator/new-account', views.coordinator_new_account, name='coordinator_new_account'),
-    path('coordinator/sign-in', views.coordinator_sign_in, name='coordinator_sign_in'),
-    path('employee/new-account', views.employee_new_account, name='employee_new_account'),
-    path('employee/sign-in', views.employee_sign_in, name='employee_sign_in'),
-
+     path('', views.index, name='index'),
+     path('about', views.about, name='about'),
+     path('support', views.support, name='support'),
+     path('demo', views.demo_dashboard, name='demo_dashboard'),
+     path('new-account', NewAccountView.as_view({
+         'get': 'get',
+         'post': 'post'
+     })),
+     path('sign-in', SignInView.as_view(), name='sign_in'),
+     path('dashboard', UserView.as_view()),
+     path('logout', LogoutView.as_view()),
 ]

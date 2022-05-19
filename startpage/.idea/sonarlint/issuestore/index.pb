@@ -24,13 +24,9 @@ F
 templates/contact.html,7\f\7f50bc186c5d8c3260f8530e58ffb1e0559fb0ca
 D
 templates/about.html,5\8\58893e517e4076b20838ca69fba7259ba475306a
-U
-%templates/auth-login-coordinator.html,9\5\95f994e8fb771450e6f613656c7d467ca9ecbb24
-U
-%templates/auth-register-employee.html,8\f\8f2219379b30de76819faa72c58fc63a11d96ab5
-R
-"templates/auth-login-employee.html,0\0\0054e5fe424b31f134f242d0f7c462700e82084e
-X
-(templates/auth-register-coordinator.html,8\1\81c88da4eeda913355003b434fe229289bd76d4d
 C
 templates/demo.html,7\d\7d9fdfde5297833446d50fa665fb19f1acd9877c
+E
+welcomepage/models.py,1\0\10ad9de76219976bf82059b321fdab19ff1cebca
+J
+welcomepage/serializers.py,e\e\ee9f4c51e3d0c6f0e8c46daffed96b546a8a0cb7

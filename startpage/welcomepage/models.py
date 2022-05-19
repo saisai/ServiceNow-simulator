@@ -1,11 +1,15 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
-# Registration Form for Coordinator
-class CoordinatorRegistration(models.Model):
-    name = models.CharField(max_length=50)
-    surname = models.CharField(max_length=50)
-    email = models.CharField(max_length=50)
-    password = models.CharField(max_length=50)
 
-    class Meta:
-        db_table = "coordinator"
+# Create your models here.
+class User(AbstractUser):
+    name = models.CharField(max_length=255)
+    surname = models.CharField(max_length=255)
+    email = models.CharField(max_length=255, unique=True)
+    password = models.CharField(max_length=255)
+    is_coordinator = models.BooleanField(default=False)
+    username = None
+
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = []
