@@ -1,11 +1,14 @@
 from django.shortcuts import render
+from django.contrib import messages
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import AuthenticationFailed
+from django.http import HttpResponseRedirect
 from .serializers import UserSerializer
 from .models import User
 from rest_framework import viewsets
 import jwt, datetime
+
 
 def index(request):
     return render(request, 'index.html')
@@ -30,15 +33,20 @@ def sign_in(request):
 class NewAccountView(viewsets.ViewSet):
     def post(self, request):
         serializer = UserSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data)
+        if serializer.is_valid():
+            is_coordinator = request.POST.getlist('is_coordinator')
+            serializer.save()
+            messages.success(request, 'Your account has been created')
+            return HttpResponseRedirect('/sign-in')
+        else:
+            messages.error(request, 'Error! User already exists')
+            return render(request, 'auth-register.html')
 
     def get(self, request):
         return render(request, 'auth-register.html')
 
 
-class SignInView(APIView):
+class SignInView(viewsets.ViewSet):
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
@@ -66,6 +74,9 @@ class SignInView(APIView):
         })
 
         return response
+
+    def get(self, request):
+        return render(request, 'auth-login.html')
 
 
 class UserView(APIView):

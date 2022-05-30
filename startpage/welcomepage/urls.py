@@ -10,8 +10,12 @@ urlpatterns = [
      path('new-account', NewAccountView.as_view({
          'get': 'get',
          'post': 'post'
-     })),
-     path('sign-in', SignInView.as_view(), name='sign_in'),
+     }), name='new_account'),
+     path('sign-in', SignInView.as_view({
+          'get': 'get',
+          'post': 'post'
+     }), name='sign_in'),
+
      path('dashboard', UserView.as_view()),
      path('logout', LogoutView.as_view()),
 ]
