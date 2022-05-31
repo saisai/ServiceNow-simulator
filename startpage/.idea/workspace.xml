@@ -2,24 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25993c61-39b9-43ab-a714-ca039e398e4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/messages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/build-assets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/build-pug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/build-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/build-scss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/clean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/render-assets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/render-pug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/render-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/render-scss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/sb-watch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/start-debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard-coordinator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/users_db/welcomepage_user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/users_db/welcomepage_user.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fdb22add61f87dd40eab6b4e48038989e919ef7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fdb22add61f87dd40eab6b4e48038989e919ef7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startpage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/startpage/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-4.1/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/bootstrap-4.1/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auth-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth-register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcomepage/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/welcomepage/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcomepage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/welcomepage/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/messages.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/welcomepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/welcomepage/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/welcomepage/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+            <state relative-caret-position="220">
+              <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -75,8 +78,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/auth-login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state>
+              <caret selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard-coordinator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3135">
+              <caret line="1416" column="112" selection-start-line="1416" selection-start-column="112" selection-end-line="1416" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -84,19 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/auth-register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://e2ac0dee-4f2d-43cb-b64a-3c38f48f8fa0/schema/users_db/table/welcomepage_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <filtering enabled="true">
-                <filter text="" />
-              </filtering>
+              <caret selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -104,8 +105,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="20263" column="1" selection-start-line="20263" selection-start-column="1" selection-end-line="20263" selection-end-column="1" />
+            <state relative-caret-position="28">
+              <caret line="41288" lean-forward="true" selection-start-line="41288" selection-end-line="41288" />
+              <folding>
+                <element signature="e#441843#442066#2" expanded="true" />
+                <element signature="e#444356#444577#2" expanded="true" />
+                <element signature="e#444641#444774#2" expanded="true" />
+                <element signature="e#444901#445116#2" expanded="true" />
+                <element signature="e#445454#445604#2" expanded="true" />
+                <element signature="e#445883#446021#2" expanded="true" />
+                <element signature="e#446123#446256#2" expanded="true" />
+                <element signature="e#454946#455180#2" expanded="true" />
+                <element signature="e#456543#456766#1" expanded="true" />
+                <element signature="e#456768#457002#1" expanded="true" />
+                <element signature="e#459526#459840#2" expanded="true" />
+                <element signature="e#461242#461465#1" expanded="true" />
+                <element signature="e#461467#461781#1" expanded="true" />
+                <element signature="e#552987#553222#2" expanded="true" />
+                <element signature="e#554108#554349#2" expanded="true" />
+                <element signature="e#558521#558792#2" expanded="true" />
+                <element signature="e#558964#559235#2" expanded="true" />
+                <element signature="e#591953#592266#1" expanded="true" />
+                <element signature="e#608320#608567#2" expanded="true" />
+                <element signature="e#608622#608870#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,6 +151,7 @@
       <find>Support</find>
       <find>Contribute</find>
       <find>Demo</find>
+      <find>navbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,13 +182,14 @@
         <option value="$PROJECT_DIR$/templates/auth-login.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/vendor/bootstrap-4.1/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/templates/auth-register.html" />
         <option value="$PROJECT_DIR$/welcomepage/views.py" />
+        <option value="$PROJECT_DIR$/templates/dashboard-coordinator.html" />
+        <option value="$PROJECT_DIR$/static/css/styles.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -175,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +226,25 @@
             <path>
               <item name="startpage" type="b2602c69:ProjectViewProjectNode" />
               <item name="startpage" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startpage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startpage" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startpage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startpage" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="startpage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="startpage" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,6 +256,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,17 +264,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IT\Python\Praca_Inzynierska\startpage\static\fonts" />
       <recent name="D:\IT\Python\Praca_Inzynierska\startpage\templates" />
       <recent name="D:\IT\Python\Praca_Inzynierska\startpage" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IT\Python\Praca_Inzynierska\startpage\static\js" />
       <recent name="D:\IT\Python\Praca_Inzynierska\startpage\templates" />
       <recent name="D:\IT\Python\Praca_Inzynierska\startpage" />
     </key>
@@ -293,16 +339,17 @@
       <workItem from="1652910892367" duration="3060000" />
       <workItem from="1652914596441" duration="4638000" />
       <workItem from="1653915067672" duration="17168000" />
+      <workItem from="1654019142257" duration="4047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52864000" />
+    <option name="totallyTimeSpent" value="56911000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.105066665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.106133334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -317,7 +364,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50164294" side_tool="true" weight="0.240991" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49835706" visible="true" weight="0.23188406" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49835706" visible="true" weight="0.23188406" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3277592" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -457,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/messages.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" lean-forward="true" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startpage/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2782">
@@ -535,10 +575,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+    <entry file="das://e2ac0dee-4f2d-43cb-b64a-3c38f48f8fa0/schema/users_db/table/welcomepage_user_groups">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/messages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20263" column="1" selection-start-line="20263" selection-start-column="1" selection-end-line="20263" selection-end-column="1" />
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -553,25 +602,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/auth-register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/auth-login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state>
+          <caret selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/welcomepage/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        <state relative-caret-position="220">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/auth-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/build-assets.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="41288" lean-forward="true" selection-start-line="41288" selection-end-line="41288" />
+          <folding>
+            <element signature="e#441843#442066#2" expanded="true" />
+            <element signature="e#444356#444577#2" expanded="true" />
+            <element signature="e#444641#444774#2" expanded="true" />
+            <element signature="e#444901#445116#2" expanded="true" />
+            <element signature="e#445454#445604#2" expanded="true" />
+            <element signature="e#445883#446021#2" expanded="true" />
+            <element signature="e#446123#446256#2" expanded="true" />
+            <element signature="e#454946#455180#2" expanded="true" />
+            <element signature="e#456543#456766#1" expanded="true" />
+            <element signature="e#456768#457002#1" expanded="true" />
+            <element signature="e#459526#459840#2" expanded="true" />
+            <element signature="e#461242#461465#1" expanded="true" />
+            <element signature="e#461467#461781#1" expanded="true" />
+            <element signature="e#552987#553222#2" expanded="true" />
+            <element signature="e#554108#554349#2" expanded="true" />
+            <element signature="e#558521#558792#2" expanded="true" />
+            <element signature="e#558964#559235#2" expanded="true" />
+            <element signature="e#591953#592266#1" expanded="true" />
+            <element signature="e#608320#608567#2" expanded="true" />
+            <element signature="e#608622#608870#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/scss/admin/components/navigation/_topnav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard-coordinator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3135">
+          <caret line="1416" column="112" selection-start-line="1416" selection-start-column="112" selection-end-line="1416" selection-end-column="112" />
         </state>
       </provider>
     </entry>

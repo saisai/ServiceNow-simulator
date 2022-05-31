@@ -32,6 +32,7 @@ def sign_in(request):
 
 class NewAccountView(viewsets.ViewSet):
     def post(self, request):
+        is_coordinator=0
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             is_coordinator = request.POST.getlist('is_coordinator')
@@ -50,14 +51,15 @@ class SignInView(viewsets.ViewSet):
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
-
         user = User.objects.filter(email=email).first()
-
+        print(bool(user.is_coordinator))
         if user is None:
-            raise AuthenticationFailed('User not found')
+            messages.error(request, 'User not found. Please try again')
+            return HttpResponseRedirect('/sign-in')
 
         if not user.check_password(password):
-            raise AuthenticationFailed('Invalid password')
+            messages.error(request, 'Invalid password. Please try again')
+            return HttpResponseRedirect('/sign-in')
 
         payload = {
             'id': user.id,
@@ -73,7 +75,7 @@ class SignInView(viewsets.ViewSet):
             'jwt': token
         })
 
-        return response
+        return render(request, 'dashboard-coordinator.html')
 
     def get(self, request):
         return render(request, 'auth-login.html')
