@@ -74,8 +74,8 @@ class SignInView(viewsets.ViewSet):
         response.data = ({
             'jwt': token
         })
-
-        return render(request, 'dashboard-coordinator.html')
+        #tutaj dodać if'a, że jeśli is_coordinator == True to dashboard-coordinator, jeśli nie to do dashboard'u usera
+        return render(request, 'dashboard-coordinator.html', {'name': user.name, 'surname': user.surname, 'email': user.email})
 
     def get(self, request):
         return render(request, 'auth-login.html')

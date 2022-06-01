@@ -32,11 +32,15 @@ J
 welcomepage/serializers.py,e\e\ee9f4c51e3d0c6f0e8c46daffed96b546a8a0cb7
 L
 templates/auth-register.html,9\c\9c14e2318d6eb6dca83a87b8978abfc0115b5cee
-G
-templates/messages.html,9\2\924627e410e78e0b95a7bea0cab78584c7948f33
 ]
 -static/vendor/bootstrap-4.1/bootstrap.min.css,7\9\79a1617f80690c4a0426fcf3cbbb186861e4d5a4
 E
 static/css/styles.css,f\f\ff5f6247d17a4d94e3cf2aed570cdefe538f01e5
 I
 templates/auth-login.html,5\7\5735f4083b3779860dec7f744fe263d99bb4395a
+I
+static/js/build-assets.js,a\d\ad48dce7e0c9664be65e14e887b928bebe525053
+d
+4static/scss/admin/components/navigation/_topnav.scss,3\3\333c59b51476f16a0e3a93e9bf0ae7a21b06f954
+T
+$templates/dashboard-coordinator.html,0\2\02d0e149a8aefb30398884d603ec08fbcc5d0531

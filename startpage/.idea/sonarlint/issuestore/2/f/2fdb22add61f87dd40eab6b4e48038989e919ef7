@@ -1,2 +1,4 @@
 
-Ppython:S1481%"2Remove the unused local variable "is_coordinator".(óÏÜ8ºş²‘0
+mpython:S1192)"IDefine a constant instead of duplicating this literal '/sign-in' 3 times.(»Ø÷¤üÿÿÿÿ8ÈÇÚ‘0
+Qpython:S1481#"2Remove the unused local variable "is_coordinator".(“ı£’8äî³Ú‘0
+Ppython:S1481&"2Remove the unused local variable "is_coordinator".(óÏÜ8ºş²‘0
