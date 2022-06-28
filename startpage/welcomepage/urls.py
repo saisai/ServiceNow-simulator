@@ -15,7 +15,8 @@ urlpatterns = [
           'get': 'get',
           'post': 'post'
      }), name='sign_in'),
-
-     path('dashboard', UserView.as_view()),
-     path('logout', LogoutView.as_view()),
+     path('logout', views.logout, name='logout'),
+     path('dashboard-coordinator/<str:user>', views.dashboard_coordinator, name='dashboard_coordinator'),
+     path('dashboard-employee', views.dashboard_employee, name='dashboard_employee'),
+     path('account-profile', views.account, name='account'),
 ]

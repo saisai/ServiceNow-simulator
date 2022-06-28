@@ -1,4 +1,7 @@
 
-mpython:S1192)"IDefine a constant instead of duplicating this literal '/sign-in' 3 times.(»Ø÷¤üÿÿÿÿ8ÈÇÚ‘0
-Qpython:S1481#"2Remove the unused local variable "is_coordinator".(“ı£’8äî³Ú‘0
-Ppython:S1481&"2Remove the unused local variable "is_coordinator".(óÏÜ8ºş²‘0
+;python:S125"Remove this commented out code.(—Ò‹8è ªÿ˜0
+Opython:S1481"2Remove the unused local variable "is_coordinator".(“ı£’8ù¦™³–0
+Npython:S1481"2Remove the unused local variable "is_coordinator".(óÏÜ8ù¦™³–0
+;python:S125"Remove this commented out code.(‘êòÜ8œ¦èÚ—0
+kpython:S1192"IDefine a constant instead of duplicating this literal '/sign-in' 4 times.(»Ø÷¤üÿÿÿÿ8ù¦™³–0
+mpython:S1192"PDefine a constant instead of duplicating this literal 'auth-login.html' 3 times.(×³ÎÀ8Û˜ÿº–0

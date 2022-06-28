@@ -44,3 +44,9 @@ d
 4static/scss/admin/components/navigation/_topnav.scss,3\3\333c59b51476f16a0e3a93e9bf0ae7a21b06f954
 T
 $templates/dashboard-coordinator.html,0\2\02d0e149a8aefb30398884d603ec08fbcc5d0531
+Q
+!templates/dashboard-employee.html,c\d\cd42a026fa7fa2a8f7401f55a8b9362ba152264d
+C
+welcomepage/apps.py,8\9\895fa1fe3d576c45742cd2aab7686a8aad077f1b
+N
+templates/account-profile.html,7\f\7f70228a92deab75c28f6818b4c468d303d5ab95

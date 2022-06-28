@@ -1,38 +1,38 @@
 
-NWeb:TableWithoutCaptionCheck–" Add a description to this table.(ÿ®°¼ùÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck™";Add either an 'id' or a 'scope' attribute to this <th> tag.(‘‡ãp
-NWeb:AvoidCommentedOutCodeCheckv"Remove this commented out code.(ÿšìŸúÿÿÿÿ
-IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ñíú
-CWeb:BoldAndItalicTagsCheck8"Replace this <i> tag by <em>.(·‚¹Ô
-g Web:TableHeaderHasIdOrScopeCheckœ";Add either an 'id' or a 'scope' attribute to this <th> tag.(œˆÙx
-IWeb:AvoidCommentedOutCodeCheck‚"Remove this commented out code.(‚ïŸs
-m Web:TableHeaderHasIdOrScopeCheck ";Add either an 'id' or a 'scope' attribute to this <th> tag.(ƒ«ºÍúÿÿÿÿ
-m Web:TableHeaderHasIdOrScopeCheck¡";Add either an 'id' or a 'scope' attribute to this <th> tag.(”È¥ùüÿÿÿÿ
-h Web:TableHeaderHasIdOrScopeCheck¨";Add either an 'id' or a 'scope' attribute to this <th> tag.(ëí€í
-h Web:TableHeaderHasIdOrScopeCheck«";Add either an 'id' or a 'scope' attribute to this <th> tag.(ĞÀƒï
-^	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(Ô¤ªìûÿÿÿÿ
-^	Web:S5255^"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(²„—•ûÿÿÿÿ
-h Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÍØ¨Ô
-OWeb:AvoidCommentedOutCodeCheckš"Remove this commented out code.(ä²›Æøÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck¬";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ç­Ó-
-HWeb:BoldAndItalicTagsCheckQ"Replace this <i> tag by <em>.(”úøÉøÿÿÿÿ
-m Web:TableHeaderHasIdOrScopeCheck­";Add either an 'id' or a 'scope' attribute to this <th> tag.(ƒ«ºÍúÿÿÿÿ
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(úÅÑ»ûÿÿÿÿ
-CWeb:BoldAndItalicTagsCheckU"Replace this <i> tag by <em>.(©ıÚá
-HWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Ğ…Áo
-h Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ĞÀƒï
-LWeb:ImgWithoutAltCheckF"%Add an "alt" attribute to this image.(ˆÆ˜¼øÿÿÿÿ
-h Web:TableHeaderHasIdOrScopeCheck›";Add either an 'id' or a 'scope' attribute to this <th> tag.(ëí€í
-IWeb:AvoidCommentedOutCodeCheckI"Remove this commented out code.(ğ‹³
-g Web:TableHeaderHasIdOrScopeCheckŸ";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ç­Ó-
-CWeb:BoldAndItalicTagsCheckg"Replace this <i> tag by <em>.(æ®ü¦
-h Web:TableHeaderHasIdOrScopeCheckª";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÍØ¨Ô
-CWeb:BoldAndItalicTagsCheckn"Replace this <i> tag by <em>.(œ¤…è
-IWeb:AvoidCommentedOutCodeCheckr"Remove this commented out code.(½›Æ
-OWeb:AvoidCommentedOutCodeCheck§"Remove this commented out code.(ä²›Æøÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck¦";Add either an 'id' or a 'scope' attribute to this <th> tag.(‘‡ãp
-NWeb:AvoidCommentedOutCodeCheck&"Remove this commented out code.(ˆ„Š…ÿÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck©";Add either an 'id' or a 'scope' attribute to this <th> tag.(œˆÙx
-CWeb:BoldAndItalicTagsCheck>"Replace this <i> tag by <em>.(Àˆä
-JWeb:AvoidCommentedOutCodeCheck¼"Remove this commented out code.(ßë²ê
-m Web:TableHeaderHasIdOrScopeCheck®";Add either an 'id' or a 'scope' attribute to this <th> tag.(”È¥ùüÿÿÿÿ
+c	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(²„—•ûÿÿÿÿ8«Ô•ø™0
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(©ıÚá8«Ô•ø™0
+k Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(œˆÙx8«Ô•ø™0
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(Àˆä8«Ô•ø™0
+k Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(œˆÙx8«Ô•ø™0
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(·‚¹Ô8«Ô•ø™0
+SWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ä²›Æøÿÿÿÿ8«Ô•ø™0
+k Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ç­Ó-8«Ô•ø™0
+q Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ƒ«ºÍúÿÿÿÿ8«Ô•ø™0
+QWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(ˆÆ˜¼øÿÿÿÿ8«Ô•ø™0
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ßë²ê8«Ô•ø™0
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ñíú8«Ô•ø™0
+RWeb:TableWithoutCaptionCheck" Add a description to this table.(ÿ®°¼ùÿÿÿÿ8«Ô•ø™0
+l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÍØ¨Ô8«Ô•ø™0
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(œ¤…è8«Ô•ø™0
+MWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(‚ïŸs8«Ô•ø™0
+q Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(”È¥ùüÿÿÿÿ8«Ô•ø™0
+l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ëí€í8«Ô•ø™0
+SWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ä²›Æøÿÿÿÿ8«Ô•ø™0
+l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ëí€í8«Ô•ø™0
+l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÍØ¨Ô8«Ô•ø™0
+l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ĞÀƒï8«Ô•ø™0
+SWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ÿšìŸúÿÿÿÿ8«Ô•ø™0
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(½›Æ8«Ô•ø™0
+k Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(‘‡ãp8«Ô•ø™0
+MWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Ğ…Áo8«Ô•ø™0
+SWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ˆ„Š…ÿÿÿÿÿ8«Ô•ø™0
+q Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ƒ«ºÍúÿÿÿÿ8«Ô•ø™0
+c	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(Ô¤ªìûÿÿÿÿ8«Ô•ø™0
+MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(”úøÉøÿÿÿÿ8«Ô•ø™0
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(æ®ü¦8«Ô•ø™0
+k Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(‘‡ãp8«Ô•ø™0
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ğ‹³8«Ô•ø™0
+k Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ç­Ó-8«Ô•ø™0
+q Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(”È¥ùüÿÿÿÿ8«Ô•ø™0
+MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(úÅÑ»ûÿÿÿÿ8«Ô•ø™0
+l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ĞÀƒï8«Ô•ø™0

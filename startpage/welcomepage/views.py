@@ -3,11 +3,14 @@ from django.contrib import messages
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import AuthenticationFailed
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from .serializers import UserSerializer
 from .models import User
 from rest_framework import viewsets
 import jwt, datetime
+from django.shortcuts import redirect
+from django.urls import reverse
+from django.contrib.auth.models import auth
 
 
 def index(request):
@@ -28,6 +31,20 @@ def demo_dashboard(request):
 
 def sign_in(request):
     return render(request, 'auth-login.html')
+
+
+def account(request):
+    return render(request, 'account-profile.html')
+
+
+def dashboard_employee(request, user):
+    return render(request, 'dashboard-employee1.html',
+                  {'name': user.name, 'surname': user.surname, 'email': user.email})
+
+
+def dashboard_coordinator(request, user):
+    return render(request, 'dashboard-coordinator.html',
+                  {'name': user.name, 'surname': user.surname, 'email': user.email})
 
 
 class NewAccountView(viewsets.ViewSet):
@@ -51,8 +68,8 @@ class SignInView(viewsets.ViewSet):
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
+        global user
         user = User.objects.filter(email=email).first()
-        print(bool(user.is_coordinator))
         if user is None:
             messages.error(request, 'User not found. Please try again')
             return HttpResponseRedirect('/sign-in')
@@ -66,7 +83,7 @@ class SignInView(viewsets.ViewSet):
             'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
             'iat': datetime.datetime.utcnow()
         }
-        
+
         token = jwt.encode(payload, 'secret', algorithm='HS256')
 
         response = Response()
@@ -74,8 +91,19 @@ class SignInView(viewsets.ViewSet):
         response.data = ({
             'jwt': token
         })
-        #tutaj dodać if'a, że jeśli is_coordinator == True to dashboard-coordinator, jeśli nie to do dashboard'u usera
-        return render(request, 'dashboard-coordinator.html', {'name': user.name, 'surname': user.surname, 'email': user.email})
+
+        # if user.is_coordinator:
+        #     return redirect('http://127.0.0.1:8001/dashboard-coordinator')
+        # else:
+        #     return HttpResponseRedirect('http://127.0.0.1:8001/dashboard-employee', {'name': user.name, 'surname': user.surname, 'email': user.email})
+
+        if user.is_coordinator:
+            # return redirect('dashboard-coordinator', user=user)
+            return render(request, 'dashboard-coordinator.html',
+                          {'name': user.name, 'surname': user.surname, 'email': user.email})
+        else:
+            return render(request, 'dashboard-employee.html',
+                          {'name': user.name, 'surname': user.surname, 'email': user.email})
 
     def get(self, request):
         return render(request, 'auth-login.html')
@@ -105,4 +133,11 @@ class LogoutView(APIView):
         response.data = {
             'message': 'success'
         }
-        return response
+        return render(request, 'auth-login.html')
+
+
+def logout(request):
+    auth.logout(request)
+    return HttpResponseRedirect('/sign-in')
+
+
