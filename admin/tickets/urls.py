@@ -1,6 +1,8 @@
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
-from .views import TicketViewSet, UserAPIView
+from .views import TicketViewSet, HomeView, account
+from . import views
 urlpatterns = [
     path('tickets', TicketViewSet.as_view({
         'get': 'list',
@@ -11,5 +13,9 @@ urlpatterns = [
         'put': 'update',
         'delete': 'destroy'
     })),
-    path('user', UserAPIView.as_view()),
+    url(r'dashboard-coordinator/$', HomeView.as_view({
+        'get': 'get',
+    })),
+    path('logout', views.logout, name='logout'),
+    path('dashboard-coordinator', views.account, name='account'),
 ]

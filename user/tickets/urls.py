@@ -11,8 +11,8 @@ urlpatterns = [
         'get': 'retrieve',
         'put': 'update'
     })),
-    path('dashboard-employee', HomeView.as_view({
+    path('dashboard-employee/', HomeView.as_view({
         'get': 'get',
-    }), name='home'),
+    })),
     path('logout', views.logout, name='logout'),
 ]

@@ -1,35 +1,35 @@
 
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(ïÉİà8¨£Ü™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(¯£ç¢şÿÿÿÿ8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(Ÿ†áî8¨£Ü™0
-c	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(Ô¤ªìûÿÿÿÿ8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(–Ñ¤ä8¨£Ü™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(êŞ„íùÿÿÿÿ8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(©ıÚá8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(œ¤…è8ÓØÙ€™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(¿ó½¸ûÿÿÿÿ8°û¹™0
-^	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(–¾©Á8°û¹™0
-w%Web:ItemTagNotWithinContainerTagCheck"<Surround this <li> item tag by a <ul> or <ol> container one.(÷§Õ®ıÿÿÿÿ8ÓØÙ€™0
-c	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(²„—•ûÿÿÿÿ8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(æ®ü¦8ÓØÙ€™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(‚ãåØşÿÿÿÿ8¨£Ü™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(ô÷—ú8¨£Ü™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(Š•Üî8¨£Ü™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(‹ôšºıÿÿÿÿ8ÓØÙ€™0
-QWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(ºç‚¸üÿÿÿÿ8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(æ£—Ø8ÓØÙ€™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(”úøÉøÿÿÿÿ8ÓØÙ€™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(ËÖ¼ˆøÿÿÿÿ8°û¹™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(£ƒÑØ8°û¹™0
-QWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(˜Ô¯·øÿÿÿÿ8ÓØÙ€™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(àò”ùÿÿÿÿ8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(Ò¯•´8°û¹™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(å‡¾„ùÿÿÿÿ8¨£Ü™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(àÂ–Ä8¨£Ü™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(ØÕÉâ8¨£Ü™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(ØÕÉâ8¨£Ü™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(úÅÑ»ûÿÿÿÿ8ÓØÙ€™0
-QWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(—³úÿÿÿÿ8ÓØÙ€™0
-MWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(´ìÇ±øÿÿÿÿ8ÓØÙ€™0
-QWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(‡û¬îüÿÿÿÿ8ÓØÙ€™0
-HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(Àˆä8ÏÆ‘ˆ™0
+KWeb:BoldAndItalicTagsCheck”"Replace this <i> tag by <em>.(æ£—Ø8ÓØÙ€™0
+TWeb:ImgWithoutAltCheck¦"%Add an "alt" attribute to this image.(‡û¬îüÿÿÿÿ8ÓØÙ€™0
+KWeb:BoldAndItalicTagsCheckÀ"Replace this <i> tag by <em>.(Ÿ†áî8¨£Ü™0
+JWeb:BoldAndItalicTagsCheckG"Replace this <i> tag by <em>.(æ®ü¦8ÓØÙ€™0
+KWeb:BoldAndItalicTagsCheckŒ"Replace this <i> tag by <em>.(ØÕÉâ8¨£Ü™0
+e	Web:S5255>"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(²„—•ûÿÿÿÿ8ÓØÙ€™0
+PWeb:BoldAndItalicTagsCheck£"Replace this <i> tag by <em>.(àò”ùÿÿÿÿ8ÓØÙ€™0
+JWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(Àˆä8ÏÆ‘ˆ™0
+JWeb:BoldAndItalicTagsCheckN"Replace this <i> tag by <em>.(œ¤…è8ÓØÙ€™0
+PWeb:BoldAndItalicTagsCheck´"Replace this <i> tag by <em>.(‹ôšºıÿÿÿÿ8ÓØÙ€™0
+PWeb:BoldAndItalicTagsCheckĞ"Replace this <i> tag by <em>.(¯£ç¢şÿÿÿÿ8ÓØÙ€™0
+`	Web:S5255b"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(–¾©Á8°û¹™0
+PWeb:BoldAndItalicTagsCheckŞ"Replace this <i> tag by <em>.(êŞ„íùÿÿÿÿ8ÓØÙ€™0
+OWeb:BoldAndItalicTagsCheck1"Replace this <i> tag by <em>.(”úøÉøÿÿÿÿ8ÓØÙ€™0
+KWeb:BoldAndItalicTagsCheck±"Replace this <i> tag by <em>.(ØÕÉâ8¨£Ü™0
+KWeb:BoldAndItalicTagsCheckø"Replace this <i> tag by <em>.(àÂ–Ä8¨£Ü™0
+KWeb:BoldAndItalicTagsCheck„"Replace this <i> tag by <em>.(ô÷—ú8¨£Ü™0
+JWeb:BoldAndItalicTagsCheckU"Replace this <i> tag by <em>.(£ƒÑØ8°û¹™0
+PWeb:BoldAndItalicTagsCheckÎ"Replace this <i> tag by <em>.(‚ãåØşÿÿÿÿ8¨£Ü™0
+TWeb:ImgWithoutAltChecké"%Add an "alt" attribute to this image.(˜Ô¯·øÿÿÿÿ8ÓØÙ€™0
+KWeb:BoldAndItalicTagsCheckü"Replace this <i> tag by <em>.(Š•Üî8¨£Ü™0
+OWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(úÅÑ»ûÿÿÿÿ8ÓØÙ€™0
+OWeb:BoldAndItalicTagsCheck]"Replace this <i> tag by <em>.(¿ó½¸ûÿÿÿÿ8°û¹™0
+PWeb:BoldAndItalicTagsCheckÇ"Replace this <i> tag by <em>.(å‡¾„ùÿÿÿÿ8¨£Ü™0
+SWeb:ImgWithoutAltCheck("%Add an "alt" attribute to this image.(—³úÿÿÿÿ8ÓØÙ€™0
+OWeb:BoldAndItalicTagsCheckl"Replace this <i> tag by <em>.(ËÖ¼ˆøÿÿÿÿ8°û¹™0
+KWeb:BoldAndItalicTagsCheckô"Replace this <i> tag by <em>.(ïÉİà8¨£Ü™0
+KWeb:BoldAndItalicTagsCheck€"Replace this <i> tag by <em>.(–Ñ¤ä8¨£Ü™0
+JWeb:BoldAndItalicTagsCheck5"Replace this <i> tag by <em>.(©ıÚá8ÓØÙ€™0
+y%Web:ItemTagNotWithinContainerTagCheck$"<Surround this <li> item tag by a <ul> or <ol> container one.(÷§Õ®ıÿÿÿÿ8ÓØÙ€™0
+PWeb:BoldAndItalicTagsCheckÂ"Replace this <i> tag by <em>.(´ìÇ±øÿÿÿÿ8ÓØÙ€™0
+SWeb:ImgWithoutAltCheck%"%Add an "alt" attribute to this image.(ºç‚¸üÿÿÿÿ8ÓØÙ€™0
+JWeb:BoldAndItalicTagsCheck_"Replace this <i> tag by <em>.(Ò¯•´8°û¹™0
+e	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(Ô¤ªìûÿÿÿÿ8ÓØÙ€™0

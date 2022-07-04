@@ -1,8 +1,11 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.contrib import messages
+from django.utils.http import urlencode
+from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.exceptions import AuthenticationFailed
+
 from django.http import HttpResponseRedirect, HttpResponse
 from .serializers import UserSerializer
 from .models import User
@@ -11,40 +14,30 @@ import jwt, datetime
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.contrib.auth.models import auth
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse, HttpResponseRedirect
+
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'core/index.html')
 
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'core/about.html')
 
 
 def support(request):
-    return render(request, 'contact.html')
+    return render(request, 'core/contact.html')
 
 
 def demo_dashboard(request):
-    return render(request, 'demo.html')
+    return render(request, 'core/demo.html')
 
 
 def sign_in(request):
-    return render(request, 'auth-login.html')
-
-
-def account(request):
-    return render(request, 'account-profile.html')
-
-
-def dashboard_employee(request, user):
-    return render(request, 'dashboard-employee1.html',
-                  {'name': user.name, 'surname': user.surname, 'email': user.email})
-
-
-def dashboard_coordinator(request, user):
-    return render(request, 'dashboard-coordinator.html',
-                  {'name': user.name, 'surname': user.surname, 'email': user.email})
+    return render(request, 'core/auth-login.html')
 
 
 class NewAccountView(viewsets.ViewSet):
@@ -58,17 +51,16 @@ class NewAccountView(viewsets.ViewSet):
             return HttpResponseRedirect('/sign-in')
         else:
             messages.error(request, 'Error! User already exists')
-            return render(request, 'auth-register.html')
+            return render(request, 'core/auth-register.html')
 
     def get(self, request):
-        return render(request, 'auth-register.html')
+        return render(request, 'core/auth-register.html')
 
 
 class SignInView(viewsets.ViewSet):
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
-        global user
         user = User.objects.filter(email=email).first()
         if user is None:
             messages.error(request, 'User not found. Please try again')
@@ -78,35 +70,14 @@ class SignInView(viewsets.ViewSet):
             messages.error(request, 'Invalid password. Please try again')
             return HttpResponseRedirect('/sign-in')
 
-        payload = {
-            'id': user.id,
-            'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
-            'iat': datetime.datetime.utcnow()
-        }
-
-        token = jwt.encode(payload, 'secret', algorithm='HS256')
-
-        response = Response()
-        response.set_cookie(key='jwt', value=token, httponly=True)
-        response.data = ({
-            'jwt': token
-        })
-
-        # if user.is_coordinator:
-        #     return redirect('http://127.0.0.1:8001/dashboard-coordinator')
-        # else:
-        #     return HttpResponseRedirect('http://127.0.0.1:8001/dashboard-employee', {'name': user.name, 'surname': user.surname, 'email': user.email})
-
+        login(request, user)
         if user.is_coordinator:
-            # return redirect('dashboard-coordinator', user=user)
-            return render(request, 'dashboard-coordinator.html',
-                          {'name': user.name, 'surname': user.surname, 'email': user.email})
+            return redirect('/coordinator')
         else:
-            return render(request, 'dashboard-employee.html',
-                          {'name': user.name, 'surname': user.surname, 'email': user.email})
+            return redirect('/employee')
 
     def get(self, request):
-        return render(request, 'auth-login.html')
+        return render(request, 'core/auth-login.html')
 
 
 class UserView(APIView):
@@ -133,11 +104,51 @@ class LogoutView(APIView):
         response.data = {
             'message': 'success'
         }
-        return render(request, 'auth-login.html')
+        return render(request, 'core/auth-login.html')
+
+# ================================================================ #
+@login_required(login_url="/sign-in")
+def coordinator(request):
+    return render(request, 'coordinator/home-coordinator.html')
+
+
+@login_required(login_url="/sign-in")
+def coordinator_simulator(request):
+    pass
+
+
+@login_required(login_url="/sign-in")
+def coordinator_team(request):
+    return render(request, 'coordinator/coordinator-management-list.html')
+
+
+@login_required(login_url="/sign-in")
+def coordinator_tickets(request):
+    return render(request, 'coordinator/coordinator-create-ticket.html')
+
+
+@login_required(login_url="/sign-in")
+def coordinator_statistics(request):
+    pass
+
+
+@login_required(login_url="/sign-in")
+def coordinator_profile(request):
+    return render(request, 'coordinator/coordinator-profile.html')
+
+
+@login_required(login_url="/sign-in")
+def coordinator_password(request):
+    return render(request, 'coordinator/coordinator-password.html')
+
+# =================================================================== #
+@login_required(login_url="/sign-in")
+def employee(request):
+    if request.user.is_authenticated:
+        print("User",request.user.username)
+    return render(request, 'employee/dashboard-employee.html')
 
 
 def logout(request):
     auth.logout(request)
-    return HttpResponseRedirect('/sign-in')
-
-
+    return HttpResponseRedirect('http://127.0.0.1:8002/sign-in')

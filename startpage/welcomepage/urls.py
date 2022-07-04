@@ -1,6 +1,6 @@
 from django.contrib import admin
-from django.urls import path
-from .views import NewAccountView, SignInView, UserView, LogoutView
+from django.urls import path, re_path
+from .views import NewAccountView, SignInView, coordinator_simulator, coordinator_team, coordinator_tickets, coordinator_statistics, coordinator_profile, coordinator_password
 from . import views
 urlpatterns = [
      path('', views.index, name='index'),
@@ -16,7 +16,12 @@ urlpatterns = [
           'post': 'post'
      }), name='sign_in'),
      path('logout', views.logout, name='logout'),
-     path('dashboard-coordinator/<str:user>', views.dashboard_coordinator, name='dashboard_coordinator'),
-     path('dashboard-employee', views.dashboard_employee, name='dashboard_employee'),
-     path('account-profile', views.account, name='account'),
+     path('coordinator', views.coordinator, name='coordinator'),
+     path('coordinator/simulator', views.coordinator_simulator, name='coordinator_simulator'),
+     path('coordinator/team', views.coordinator_team, name='coordinator_team'),
+     path('coordinator/tickets', views.coordinator_tickets, name='coordinator_tickets'),
+     path('coordinator/profile', views.coordinator_profile, name='coordinator_profile'),
+     path('coordinator/password', views.coordinator_password, name='coordinator_password'),
+     path('coordinator/statistics', views.coordinator_statistics, name='coordinator_statistics'),
+     path('employee', views.employee, name='employee'),
 ]

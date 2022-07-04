@@ -1,0 +1,72 @@
+{% extends 'coordinator/base-coordinator.html'%}
+{% load static %}
+{% block content %}
+            <div id="layoutSidenav_content">
+                <main>
+                    <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+                        <div class="container-fluid px-4">
+                            <div class="page-header-content">
+                                <div class="row align-items-center justify-content-between pt-3">
+                                    <div class="col-auto mb-3">
+                                        <h1 class="page-header-title">
+                                            <div class="page-header-icon"><i data-feather="file-plus"></i></div>
+                                            Create Ticket
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Main page content-->
+                    <div class="container-fluid px-4">
+                        <div class="row gx-4">
+                            <div class="col-lg-8">
+                                <div class="card mb-4">
+                                    <div class="card-header">CI</div>
+                                    <div class="card-body"><input class="form-control" id="postTitleInput" type="text" placeholder="Enter CI/server name..." required/></div>
+                                </div>
+                                 <div class="card mb-4">
+                                    <div class="card-header">Default Queue</div>
+                                    <div class="card-body">
+                                        <select class="form-select" aria-label="Default select example">
+                                              <option selected>PL.Bridge.BE.Events</option>
+                                              <option value="1">RO.EOC.Webservices.Windows.1LS</option>
+                                              <option value="2">PL.Network.1LS</option>
+                                              <option value="3">PL.Bridge.VO</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <div class="card-header">Short Description</div>
+                                    <div class="card-body"><input class="form-control" id="postTitleInput" type="text" placeholder="Enter short description..." required/></div>
+                                </div>
+                                <div class="card card-header-actions mb-4">
+                                    <div class="card-header">
+                                        Description
+                                    </div>
+                                    <div class="card-body"><textarea class="lh-base form-control" type="text" placeholder="Enter description..." rows="4" required></textarea></div>
+                                </div>
+                                <div class="card card-header-actions mb-4 mb-lg-0">
+                                    <div class="card-header">
+                                       Description
+                                        <i class="text-muted" data-feather="info" data-bs-toggle="tooltip" data-bs-placement="left" title="Markdown is supported within the post content editor."></i>
+                                    </div>
+                                    <div class="card-body"><textarea class="lh-base form-control" type="text" placeholder="Enter your post preview text..." rows="4" required></textarea></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card card-header-actions">
+                                    <div class="card-header">
+                                        Publish
+                                        <i class="text-muted" data-feather="info" data-bs-toggle="tooltip" data-bs-placement="left" title="After submitting, your ticket will be published."></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-grid"><button class="fw-500 btn btn-primary">Submit</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+{% endblock %}

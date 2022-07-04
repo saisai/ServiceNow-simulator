@@ -5,6 +5,8 @@ from .models import Ticket
 from rest_framework.response import Response
 from django.contrib.auth.models import auth
 from django.http import HttpResponseRedirect
+from rest_framework.exceptions import AuthenticationFailed
+import jwt
 
 
 class TicketViewSet(viewsets.ViewSet):
@@ -28,12 +30,16 @@ class TicketViewSet(viewsets.ViewSet):
 
 class HomeView(viewsets.ViewSet):
     def get(self, request):
-        name = request.GET.get('name')
-        print("Imie: " + str(name))
-        return render(request, 'dashboard-employee.html')
+        # token = request.COOKIES.get('jwt')
+        token = request.GET.get('token')
+        payload = jwt.decode(jwt=token, key='secret', algorithms=['HS256'])
+        print("Name", payload['name'])
 
+        if not token:
+            raise AuthenticationFailed('Unauthenticated!')
+        else:
+            return render(request, 'dashboard-employee.html', {'name': payload['name'], 'surname': payload['surname'], 'email': payload['mail']})
 
-#dodać tutaj class UserView(APIView)
 
 def logout(request):
     auth.logout(request)

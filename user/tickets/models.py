@@ -16,6 +16,7 @@ class Ticket(models.Model):
     def __str__(self):
         return self.incident_number
 
+
 class TicketUser(models.Model):
     id = models.IntegerField(primary_key=True)
     user_id = models.IntegerField()
