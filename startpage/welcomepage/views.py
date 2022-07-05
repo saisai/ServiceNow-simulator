@@ -42,8 +42,9 @@ def sign_in(request):
 
 class NewAccountView(viewsets.ViewSet):
     def post(self, request):
-        is_coordinator=0
+        is_coordinator = 0
         serializer = UserSerializer(data=request.data)
+
         if serializer.is_valid():
             is_coordinator = request.POST.getlist('is_coordinator')
             serializer.save()
@@ -106,7 +107,12 @@ class LogoutView(APIView):
         }
         return render(request, 'core/auth-login.html')
 
-# ================================================================ #
+
+def logout(request):
+    auth.logout(request)
+    return HttpResponseRedirect('/sign-in')
+
+# =======================<Coordinator>============================= #
 @login_required(login_url="/sign-in")
 def coordinator(request):
     return render(request, 'coordinator/home-coordinator.html')
@@ -141,14 +147,21 @@ def coordinator_profile(request):
 def coordinator_password(request):
     return render(request, 'coordinator/coordinator-password.html')
 
-# =================================================================== #
+# =======================</Coordinator>============================= #
+
+# =======================<Employee>================================= #
 @login_required(login_url="/sign-in")
 def employee(request):
-    if request.user.is_authenticated:
-        print("User",request.user.username)
-    return render(request, 'employee/dashboard-employee.html')
+    return render(request, 'employee/home-employee.html')
 
 
-def logout(request):
-    auth.logout(request)
-    return HttpResponseRedirect('http://127.0.0.1:8002/sign-in')
+@login_required(login_url="/sign-in")
+def employee_profile(request):
+    return render(request, 'employee/employee-profile.html')
+
+
+@login_required(login_url="/sign-in")
+def employee_password(request):
+    return render(request, 'employee/employee-password.html')
+
+# =======================</Employee>================================ #

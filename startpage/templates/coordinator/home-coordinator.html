@@ -12,13 +12,18 @@
                                             <div class="page-header-icon"><i data-feather="activity"></i></div>
                                             Dashboard
                                         </h1>
-{#                                        <div class="page-header-subtitle">Example dashboard overview and content summary</div>#}
-                                    </div>
-                                    <div class="col-12 col-xl-auto mt-4">
-                                        <div class="input-group input-group-joined border-0" style="width: 16.5rem">
-                                            <span class="input-group-text"><i class="text-primary" data-feather="calendar"></i></span>
-                                            <input class="form-control ps-0 pointer" id="litepickerRangePlugin" placeholder="Select date range..." />
-                                        </div>
+                                         <div class="small">
+                                    <span class="fw-500 text-light"><script>
+                                    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                                    const d = new Date();
+                                    let day = weekday[d.getDay()];
+                                    document.write(day);
+                                    </script>,</span>
+                                   <script>
+                                       date = new Date().toLocaleDateString();
+                                       document.write(date);
+                                   </script>
+                                </div>
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +63,7 @@
                                                     <div class="timeline-item-marker-indicator bg-green"></div>
                                                 </div>
                                                 <div class="timeline-item-content">
-                                                    {{ name }} has been logged in
+                                                    {{ user.name }} has been logged in
                                                 </div>
                                             </div>
                                         </div>
