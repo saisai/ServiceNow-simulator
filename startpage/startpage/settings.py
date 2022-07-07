@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'welcomepage',
 
+
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'startpage.urls'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
+}
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

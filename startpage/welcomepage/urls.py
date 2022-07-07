@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, re_path
-from .views import NewAccountView, SignInView, coordinator_simulator, coordinator_team, coordinator_tickets, \
+from .views import NewAccountView, SignInView, coordinator_team, coordinator_tickets, \
      coordinator_statistics, coordinator_profile, coordinator_password, employee_profile, employee_password
 from . import views
 urlpatterns = [
@@ -25,6 +25,7 @@ urlpatterns = [
      path('coordinator/password', views.coordinator_password, name='coordinator_password'),
      path('coordinator/statistics', views.coordinator_statistics, name='coordinator_statistics'),
      path('employee', views.employee, name='employee'),
+     path('employee/simulator', views.employee_simulator, name='employee_simulator'),
      path('employee/profile', views.employee_profile, name='employee_profile'),
      path('employee/password', views.employee_password, name='employee_password'),
 ]

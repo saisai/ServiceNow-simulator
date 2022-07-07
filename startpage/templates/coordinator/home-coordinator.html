@@ -63,7 +63,9 @@
                                                     <div class="timeline-item-marker-indicator bg-green"></div>
                                                 </div>
                                                 <div class="timeline-item-content">
+                                                    {% if user.is_authenticated %}
                                                     {{ user.name }} has been logged in
+                                                    {% endif %}
                                                 </div>
                                             </div>
                                         </div>
@@ -130,10 +132,6 @@
                                             <i class="feather-xl text-white-50" data-feather="check-square"></i>
                                         </div>
                                     </div>
-{#                                    <div class="card-footer d-flex align-items-center justify-content-between small">#}
-{#                                        <a class="text-white stretched-link" href="#!">View Tasks</a>#}
-{#                                        <div class="text-white"><i class="fas fa-angle-right"></i></div>#}
-{#                                    </div>#}
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-3 mb-4">
@@ -147,17 +145,11 @@
                                             <i class="feather-xl text-white-50" data-feather="eye"></i>
                                         </div>
                                     </div>
-{#                                    <div class="card-footer d-flex align-items-center justify-content-between small">#}
-{#                                        <a class="text-white stretched-link" href="#!">View Requests</a>#}
-{#                                        <div class="text-white"><i class="fas fa-angle-right"></i></div>#}
-{#                                    </div>#}
                                 </div>
                             </div>
                         </div>
                         <!-- Example Charts for Dashboard Demo-->
                         <div class="row">
-
-
                         </div>
                     </div>
                 </main>

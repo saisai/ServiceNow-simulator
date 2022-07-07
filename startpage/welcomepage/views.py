@@ -1,23 +1,19 @@
-from django.contrib.auth.decorators import login_required
+from django.contrib.sessions.backends.db import SessionStore
 from django.shortcuts import render
 from django.contrib import messages
-from django.utils.http import urlencode
 from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.views import APIView
 from rest_framework.response import Response
-
-from django.http import HttpResponseRedirect, HttpResponse
 from .serializers import UserSerializer
 from .models import User
 from rest_framework import viewsets
 import jwt, datetime
 from django.shortcuts import redirect
-from django.urls import reverse
 from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
-
+from rest_framework.authentication import TokenAuthentication
 
 
 def index(request):
@@ -71,6 +67,20 @@ class SignInView(viewsets.ViewSet):
             messages.error(request, 'Invalid password. Please try again')
             return HttpResponseRedirect('/sign-in')
 
+        payload = {
+            'id': user.id,
+            'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
+            'iat': datetime.datetime.utcnow()
+        }
+
+        token = jwt.encode(payload, 'secret', algorithm='HS256')
+
+        response = Response()
+        response.set_cookie(key='jwt', value=token, httponly=True)
+        response.data = ({
+            'jwt': token
+        })
+        
         login(request, user)
         if user.is_coordinator:
             return redirect('/coordinator')
@@ -120,7 +130,7 @@ def coordinator(request):
 
 @login_required(login_url="/sign-in")
 def coordinator_simulator(request):
-    pass
+    return render(request, 'coordinator/simulator-coordinator.html')
 
 
 @login_required(login_url="/sign-in")
@@ -163,5 +173,10 @@ def employee_profile(request):
 @login_required(login_url="/sign-in")
 def employee_password(request):
     return render(request, 'employee/employee-password.html')
+
+
+@login_required(login_url="/sign-in")
+def employee_simulator(request):
+    return render(request, 'employee/simulator-employee.html')
 
 # =======================</Employee>================================ #

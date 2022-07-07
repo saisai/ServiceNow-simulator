@@ -1,0 +1,69 @@
+{% extends 'employee/base-employee.html' %}
+{% load static %}
+{% block content %}
+            <div id="layoutSidenav_content">
+                <main>
+                    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+                        <div class="container-xl px-4">
+                            <div class="page-header-content pt-4">
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Main page content-->
+
+                    <div class="container-xl px-4 mt-n10">
+                        <div class="card mb-4">
+                            <div class="card-header">Incidents</div>
+                            <form method="POST" action="">
+                            <button class="btn btn-outline-primary" type="submit">Generate set of tickets</button>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Number</th>
+                                            <!-- <th>Parent Incident</th> -->
+                                            <th>Priority</th>
+                                            <th>Opened Date</th>
+                                            <th>Affected CI</th>
+                                            <th>State</th>
+                                            <th>Resolved</th>
+                                            <th>Short Description</th>
+                                            <th>Assigned to</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Number</th>
+                                            <!-- <th>Parent Incident</th> -->
+                                            <th>Priority</th>
+                                            <th>Opened Date</th>
+                                            <th>Affected CI</th>
+                                            <th>State</th>
+                                            <th>Resolved</th>
+                                            <th>Short Description</th>
+                                            <th>Assigned to</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+{#                                        {% for ticket in tickets_data %}#}
+{#                                        <tr>#}
+{#                                            <td>{{ ticket.number }}</td>#}
+{#                                            <td>{{ ticket.priority }}</td>#}
+{#                                            <td>{{ ticket.time }}</td>#}
+{#                                            <td>{{ ticket.affected_CI }}</td>#}
+{#                                            <td></td>#}
+{#                                            <td></td>#}
+{#                                            <td>{{ ticket.short_description }}</td>#}
+{#                                            {% endfor %}#}
+{#                                            <!-- <td>{{ name }} {{ surname }}</td> -->#}
+{#                                        </tr>#}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+{% endblock %}
