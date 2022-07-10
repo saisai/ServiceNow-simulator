@@ -5,33 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dbdata/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/users_db/django_session.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/users_db/django_session.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/users_db/welcomepage_user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/users_db/welcomepage_user.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f585951c24c395e4400f869d4520690d0a4dde6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f585951c24c395e4400f869d4520690d0a4dde6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fdb22add61f87dd40eab6b4e48038989e919ef7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fdb22add61f87dd40eab6b4e48038989e919ef7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30c486b2fa1ad9d5a5a312c21f3fd98aaf28ae77" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30c486b2fa1ad9d5a5a312c21f3fd98aaf28ae77" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/3696ff1065818d1e0ceb252c8af4769a99c16b50" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/3696ff1065818d1e0ceb252c8af4769a99c16b50" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38f774cc81926b59e296dc81ae97472e9ecfc7a8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38f774cc81926b59e296dc81ae97472e9ecfc7a8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95a6a4473249a3b818e37c07c444ef268cd5659d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95a6a4473249a3b818e37c07c444ef268cd5659d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b03d2e699f5f6658fa289360edd8a735723ac934" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b03d2e699f5f6658fa289360edd8a735723ac934" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e38679d62f55b3c5904507e15d1047cece143aae" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e38679d62f55b3c5904507e15d1047cece143aae" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coordinator/base-coordinator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coordinator/base-coordinator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coordinator/coordinator-create-ticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coordinator/coordinator-create-ticket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coordinator/coordinator-management-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coordinator/coordinator-management-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coordinator/coordinator-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coordinator/coordinator-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coordinator/home-coordinator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/coordinator/home-coordinator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/coordinator/simulator-coordinator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employee/base-employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employee/base-employee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employee/employee-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employee/employee-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employee/home-employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employee/home-employee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcomepage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/welcomepage/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcomepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/welcomepage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,18 +67,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/core/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="14" column="130" selection-start-line="14" selection-start-column="130" selection-end-line="14" selection-end-column="130" />
+            <state relative-caret-position="4080">
+              <caret line="199" column="150" selection-start-line="199" selection-start-column="150" selection-end-line="199" selection-end-column="150" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/core/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="40615" column="24" selection-start-line="40615" selection-start-column="24" selection-end-line="40615" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/core/about.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -120,8 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Welcome</find>
-      <find>index.</find>
       <find>Vale</find>
       <find>profile</find>
       <find>index.html</find>
@@ -149,6 +150,8 @@
       <find>employee_simlator</find>
       <find>user.</find>
       <find>create</find>
+      <find>dropdown-menu</find>
+      <find>.dropdown-xl .dropdown-menu</find>
       <find>href</find>
     </findStrings>
   </component>
@@ -158,8 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/auth-login-employee.html" />
-        <option value="$PROJECT_DIR$/templates/auth-register-employee.html" />
         <option value="$PROJECT_DIR$/templates/auth-register-coordinator.html" />
         <option value="$PROJECT_DIR$/templates/auth-login-coordinator.html" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
@@ -172,7 +173,6 @@
         <option value="$PROJECT_DIR$/templates/auth-register.html" />
         <option value="$PROJECT_DIR$/templates/contact.html" />
         <option value="$PROJECT_DIR$/templates/about.html" />
-        <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/startpage/urls.py" />
         <option value="$PROJECT_DIR$/templates/dashboard-3.html" />
         <option value="$PROJECT_DIR$/templates/demo.html" />
@@ -208,11 +208,14 @@
         <option value="$PROJECT_DIR$/templates/employee/employee-profile.html" />
         <option value="$PROJECT_DIR$/templates/coordinator/coordinator-profile.html" />
         <option value="$PROJECT_DIR$/static/js/scripts.js" />
+        <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/templates/core/index.html" />
+        <option value="$PROJECT_DIR$/templates/core/contact.html" />
+        <option value="$PROJECT_DIR$/templates/core/about.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -401,12 +404,12 @@
       <workItem from="1657461781910" duration="129000" />
       <workItem from="1657461997317" duration="4825000" />
       <workItem from="1657468027435" duration="216000" />
-      <workItem from="1657468454331" duration="6737000" />
+      <workItem from="1657468454331" duration="13743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220635000" />
+    <option name="totallyTimeSpent" value="227641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,7 +478,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/core/demo.html" />
     <entry file="file://$PROJECT_DIR$/welcomepage/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -631,15 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e2ac0dee-4f2d-43cb-b64a-3c38f48f8fa0/schema/users_db/table/welcomepage_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="cbee743f-41bd-4e4b-b48b-dfaca02ec86d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e2ac0dee-4f2d-43cb-b64a-3c38f48f8fa0/schema/users_db/table/auth_permission">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="cbee743f-41bd-4e4b-b48b-dfaca02ec86d">
@@ -721,16 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/welcomepage/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/employee/base-employee.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -773,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="9107" column="1" selection-start-line="9107" selection-start-column="1" selection-end-line="9107" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1416">
@@ -794,13 +770,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/core/about.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="das://e2ac0dee-4f2d-43cb-b64a-3c38f48f8fa0/schema/users_db/table/welcomepage_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="23523f41-5c60-4554-9b5d-e18e02056637">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="40615" column="24" selection-start-line="40615" selection-start-column="24" selection-end-line="40615" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/welcomepage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/core/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="14" column="130" selection-start-line="14" selection-start-column="130" selection-end-line="14" selection-end-column="130" />
+        <state relative-caret-position="4080">
+          <caret line="199" column="150" selection-start-line="199" selection-start-column="150" selection-end-line="199" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/core/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/core/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
         </state>
       </provider>
     </entry>

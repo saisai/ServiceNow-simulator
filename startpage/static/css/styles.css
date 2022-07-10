@@ -40610,7 +40610,7 @@ body {
   }
 
   .dropdown-xl .dropdown-menu {
-    min-width: 45rem;
+    min-width: 30rem;
   }
 }
 .navbar .dropdown-menu {

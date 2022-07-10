@@ -17,8 +17,7 @@
     <body>
         <div id="layoutDefault">
             <div id="layoutDefault_content">
-                <main>
-                    <!-- Navbar-->
+                <main>                                      <!-- Navbar-->
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top">
                         <div class="container px-5">
                             <a class="navbar-brand text-white" href="{% url 'index' %}">ServiceNow simulator</a>
@@ -28,29 +27,28 @@
                                     <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
                                     <li class="nav-item dropdown dropdown-xl no-caret">
                                         <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Join
-                                            <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                                            Join
+                                                <i class="fas fa-chevron-right dropdown-arrow"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end me-lg-n20 me-xl-n15 animated--fade-in-up" aria-labelledby="navbarDropdownPages" >
                                             <div class="row g-0">
-                                                <div class="col-lg-4 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Coordinator & new Employee</h6>
+                                                <div class="col-lg-6 p-lg-5">
+                                                    <h6 class="dropdown-header text-primary">Users</h6>
                                                     <a class="dropdown-item" href="{% url 'new_account' %}">Create an account</a>
                                                     <a class="dropdown-item" href="{% url 'sign_in' %}">Sign in</a>
                                                     <div class="dropdown-divider border-0"></div>
                                                     <div class="dropdown-divider border-0 d-lg-none"></div>
                                                 </div>
-                                                <div class="col-lg-4 p-lg-5">
+                                                <div class="col-lg-6 p-lg-5">
                                                     <h6 class="dropdown-header text-primary">Develop this project</h6>
                                                     <a class="dropdown-item" href="https://github.com/wojtekw0703/ServiceNow-simulator">Contribute</a>
-                                                    <a class="dropdown-item" href="#">Share your idea</a>
+                                                    <a class="dropdown-item" href="{% url 'support' %}">Share your idea</a>
                                                     <div class="dropdown-divider border-0"></div>
                                                     <div class="dropdown-divider border-0 d-lg-none"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-
                                     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li> <!-- autoscrolling to below section about what is Service Desk Training Center-->
                                     <li class="nav-item"><a class="nav-link" href="{% url 'support' %}">Support</a></li>
                                 </ul>
@@ -196,10 +194,10 @@
                         <div class="container px-5">                         
                             <div class="row gx-5">
                                 <div class="col-lg-6 mb-lg-n10 mb-5 mb-lg-0 z-1">
-                                    <a class="card text-decoration-none h-100 lift" href="#!">
+                                    <a class="card text-decoration-none h-100 lift" href="">
                                         <div class="card-body py-5">
                                             <div class="d-flex align-items-center">
-                                                <div class="icon-stack icon-stack-xl bg-primary text-white flex-shrink-0"><i data-feather="activity"></i></div>
+                                                <div class="icon-stack icon-stack-xl bg-primary text-white flex-shrink-0"><i data-feather="trending-up"></i></div>
                                                 <div class="ms-4">
                                                     <h5 class="text-primary">Work smarter, not harder</h5>
                                                     <p class="card-text text-gray-600">Learn more how Service Now works before you started. Save your time and effort</p>
@@ -209,7 +207,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-6 mb-lg-n10 z-1">
-                                    <a class="card text-decoration-none h-100 lift" href="#!">
+                                    <a class="card text-decoration-none h-100 lift" href="https://github.com/wojtekw0703/ServiceNow-simulator">
                                         <div class="card-body py-5">
                                             <div class="d-flex align-items-center">
                                                 <div class="icon-stack icon-stack-xl bg-secondary text-white flex-shrink-0"><i data-feather="code"></i></div>
