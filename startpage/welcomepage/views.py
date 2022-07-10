@@ -63,29 +63,30 @@ class SignInView(viewsets.ViewSet):
             messages.error(request, 'User not found. Please try again')
             return HttpResponseRedirect('/sign-in')
 
-        if not user.check_password(password):
+        user = authenticate(email=email, password=password)
+        if user is not None:
+            login(request, user)
+            payload = {
+                'id': user.id,
+                'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
+                'iat': datetime.datetime.utcnow()
+            }
+
+            token = jwt.encode(payload, 'secret', algorithm='HS256')
+
+            response = Response()
+            response.set_cookie(key='jwt', value=token, httponly=True)
+            response.data = ({
+                'jwt': token
+            })
+
+            if user.is_coordinator:
+                return redirect('/coordinator')
+            else:
+                return redirect('/employee')
+        else:
             messages.error(request, 'Invalid password. Please try again')
             return HttpResponseRedirect('/sign-in')
-
-        payload = {
-            'id': user.id,
-            'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
-            'iat': datetime.datetime.utcnow()
-        }
-
-        token = jwt.encode(payload, 'secret', algorithm='HS256')
-
-        response = Response()
-        response.set_cookie(key='jwt', value=token, httponly=True)
-        response.data = ({
-            'jwt': token
-        })
-        
-        login(request, user)
-        if user.is_coordinator:
-            return redirect('/coordinator')
-        else:
-            return redirect('/employee')
 
     def get(self, request):
         return render(request, 'core/auth-login.html')
@@ -126,11 +127,6 @@ def logout(request):
 @login_required(login_url="/sign-in")
 def coordinator(request):
     return render(request, 'coordinator/home-coordinator.html')
-
-
-@login_required(login_url="/sign-in")
-def coordinator_simulator(request):
-    return render(request, 'coordinator/simulator-coordinator.html')
 
 
 @login_required(login_url="/sign-in")

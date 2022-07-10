@@ -52,3 +52,11 @@ U
 %templates/employee/home-employee.html,3\8\38f774cc81926b59e296dc81ae97472e9ecfc7a8
 U
 %templates/employee/base-employee.html,3\0\30c486b2fa1ad9d5a5a312c21f3fd98aaf28ae77
+N
+templates/core/auth-login.html,5\3\53f21d6c4bb1ff0e02b0b1d6d5b4f486038ce8a9
+I
+templates/core/index.html,e\1\e1535b0e13ef3ed94506a3f2bcb076ce24346cb8
+`
+0templates/coordinator/simulator-coordinator.html,2\7\27d6fe074cc9fce98c854260cf94676cb19f2fee
+Z
+*templates/employee/simulator-employee.html,a\0\a05550c56d04e37261e2a463bba40be9b2590115

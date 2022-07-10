@@ -42,7 +42,7 @@
                         <h6 class="dropdown-header d-flex align-items-center">
                             <img class="dropdown-user-img" src="{% static '/assets/img/profiles/profile-1.png' %}" />
                             <div class="dropdown-user-details">
-                                {% if user.is_authenticated %}
+                                {% if request.user.is_authenticated %}
                                 <div class="dropdown-user-details-name">{{ user.name }}</div>
                                 {% endif %}
                             </div>
@@ -68,9 +68,9 @@
                              <!-- Sidenav Heading (Addons)-->
                             <div class="sidenav-menu-heading">Core</div>
                             <!-- Sidenav Link (Charts)-->
-                            <a class="nav-link" href="{% url 'coordinator_simulator' %}">
+                            <a class="nav-link" href="{% url 'coordinator' %}">
                                 <div class="nav-link-icon"><i data-feather="monitor"></i></div>
-                                ServiceNow
+                                Dashboard
                             </a>
                             <!-- Sidenav Heading (Custom)-->
                             <div class="sidenav-menu-heading">Settings</div>
@@ -113,7 +113,7 @@
                     <div class="sidenav-footer">
                         <div class="sidenav-footer-content">
                             <div class="sidenav-footer-subtitle">Logged in as:</div>
-                            {% if user.is_authenticated %}
+                            {% if request.user.is_authenticated %}
                             <div class="sidenav-footer-title">{{ user.name }} {{ user.surname }}</div>
                             {% endif %}
                         </div>

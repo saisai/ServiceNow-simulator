@@ -26,7 +26,7 @@
                             <div class="col-xl-4">
                                 <!-- Profile picture card-->
                                 <div class="card mb-4 mb-xl-0">
-                                    <div class="card-header">Default Profile Picture</div>
+                                    <div class="card-header">Profile Picture</div>
                                     <div class="card-body text-center">
                                         <!-- Profile picture image-->
                                         <img class="img-account-profile rounded-circle mb-2" src="{% static '/assets/img/profiles/profile-1.png' %}" alt="" />
@@ -46,7 +46,7 @@
                                             <!-- Form Row-->
                                             <div class="row gx-3 mb-3">
                                                 <!-- Form Group (first name)-->
-                                                {% if user.is_authenticated %}
+                                                {% if request.user.is_authenticated %}
                                                 <div class="col-md-6">
                                                     <label class="small mb-1" for="inputFirstName">First name</label>
                                                     <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="{{ user.name }}" />

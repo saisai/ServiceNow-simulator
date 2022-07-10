@@ -28,7 +28,7 @@
                             <div class="card-body p-5">
                                 <div class="row align-items-center justify-content-between">
                                     <div class="col">
-                                        {% if user.is_authenticated %}
+                                        {% if request.user.is_authenticated %}
                                         <h2 class="text-primary">Welcome, {{ user.name }}</h2>
                                         <p class="text-gray-700">Let's study something new. Process ticket examples and browse your progress</p>
                                         {% endif %}

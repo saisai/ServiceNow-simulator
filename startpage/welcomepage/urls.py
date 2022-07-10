@@ -18,7 +18,6 @@ urlpatterns = [
      }), name='sign_in'),
      path('logout', views.logout, name='logout'),
      path('coordinator', views.coordinator, name='coordinator'),
-     path('coordinator/simulator', views.coordinator_simulator, name='coordinator_simulator'),
      path('coordinator/team', views.coordinator_team, name='coordinator_team'),
      path('coordinator/tickets', views.coordinator_tickets, name='coordinator_tickets'),
      path('coordinator/profile', views.coordinator_profile, name='coordinator_profile'),
