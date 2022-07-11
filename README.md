@@ -24,7 +24,7 @@ There will be a possibility:
 - Prometheus <br>
 - Grafana <br>
 ##
-<b> Architecture:</b> microservices (startpage, admin, user). In the project REST API was implemented
+<b> Architecture:</b> microservices (startpage, admin, user). REST API was implemented in the project
 ##
 ## Deployment <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="60" height="40" /> <br>
 Full process of deployment (CI/CD) will be implemented. The simulator will be available on EC2 instance. <br> 
