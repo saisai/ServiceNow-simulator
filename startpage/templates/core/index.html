@@ -33,14 +33,14 @@
                                         <div class="dropdown-menu dropdown-menu-end me-lg-n20 me-xl-n15 animated--fade-in-up" aria-labelledby="navbarDropdownPages" >
                                             <div class="row g-0">
                                                 <div class="col-lg-6 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Users</h6>
+                                                    <h6 class="dropdown-header text-primary">Coordinator & Employee</h6>
                                                     <a class="dropdown-item" href="{% url 'new_account' %}">Create an account</a>
                                                     <a class="dropdown-item" href="{% url 'sign_in' %}">Sign in</a>
                                                     <div class="dropdown-divider border-0"></div>
                                                     <div class="dropdown-divider border-0 d-lg-none"></div>
                                                 </div>
                                                 <div class="col-lg-6 p-lg-5">
-                                                    <h6 class="dropdown-header text-primary">Develop this project</h6>
+                                                    <h6 class="dropdown-header text-primary">Develop the project</h6>
                                                     <a class="dropdown-item" href="https://github.com/wojtekw0703/ServiceNow-simulator">Contribute</a>
                                                     <a class="dropdown-item" href="{% url 'support' %}">Share your idea</a>
                                                     <div class="dropdown-divider border-0"></div>
@@ -109,30 +109,40 @@
                     <section class="bg-light py-10">
                         <div class="container px-5">
                             <div class="row gx-5 align-items-center justify-content-center">
-                                <div class="col-md-9 col-lg-6 order-1 order-lg-0" data-aos="fade-right">
-                                    <div class="content-skewed content-skewed-right"><img class="content-skewed-item img-fluid shadow-lg rounded-3" src="C:\Users\Wojtek\Desktop\Capture.png" alt="" /></div>
+                                <div class="col-lg-6">
+                                    <div class="text-center">
+                                        <div class="text-xs text-uppercase-expanded text-primary mb-2">Here's What You Get</div>
+                                        <h2 class="mb-5"></h2>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0" data-aos="fade-left">
-                                    <div class="mb-5">
-                                        <h2>Here's What You Get</h2>
-                                        <p class="lead">Basic skills to be able to start your first job.  </p>
-                                    </div>
-                                    <div class="row gx-5">
-                                        <div class="col-md-6 mb-4">
-                                            <h6>Your Buddy/Coordinator</h6>
-                                            <p class="mb-2 small">They will introduce you to a new environment</p>
+                            </div>
+                            <div class="row gx-5">
+                                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                                    <a class="card text-center text-decoration-none h-100 lift" href="">
+                                        <div class="card-body py-5">
+                                            <div class="icon-stack icon-stack-lg bg-green-soft text-green mb-4"><i data-feather="layers"></i></div>
+                                            <h5>Knowledge</h5>
+                                            <p class="card-text small">You will learn the basics of ServiceNow</p>
                                         </div>
-                                        <div class="col-md-6 mb-4">
-                                            <h6>Test tickets</h6>
-                                            <p class="mb-2 small mb-0">A set of test tickets to help you imagine real working conditions </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+                                    <a class="card text-center text-decoration-none h-100 lift" href="">
+                                        <div class="card-body py-5">
+                                            <div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4"><i data-feather="clock"></i></div>
+                                            <h5>Experience</h5>
+                                            <p class="card-text small">You will gain basic experience in tickets handling</p>
                                         </div>
-                                    </div>
-                                    <div class="row gx-5">
-                                        <div class="col-md-6 mb-4">
-                                            <h6>Monitoring your progress</h6>
-                                            <p class="mb-2 small mb-0">Your Coordinator or Buddy will be able to check your progress</p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="150">
+                                    <a class="card text-center text-decoration-none h-100 lift" href="">
+                                        <div class="card-body py-5">
+                                            <div class="icon-stack icon-stack-lg bg-yellow-soft text-yellow mb-4"><i data-feather="user"></i></div>
+                                            <h5>Buddy or Coordinator</h5>
+                                            <p class="card-text small">One of them will track your tickets processing and will help in any trouble</p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -210,10 +220,10 @@
                                     <a class="card text-decoration-none h-100 lift" href="https://github.com/wojtekw0703/ServiceNow-simulator">
                                         <div class="card-body py-5">
                                             <div class="d-flex align-items-center">
-                                                <div class="icon-stack icon-stack-xl bg-secondary text-white flex-shrink-0"><i data-feather="code"></i></div>
+                                                <div class="icon-stack icon-stack-xl bg-secondary text-white flex-shrink-0"><i data-feather="github"></i></div>
                                                 <div class="ms-4">
-                                                    <h5 class="text-secondary">Start contributing in this project</h5>
-                                                    <p class="card-text text-gray-600">Develop ServiceNow simulator at Github</p>
+                                                    <h5 class="text-secondary">Let's contribute to the project</h5>
+                                                    <p class="card-text text-gray-600">Develop the ServiceNow simulator at Github</p>
                                                 </div>
                                             </div>
                                         </div>
