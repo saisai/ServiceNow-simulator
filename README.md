@@ -28,4 +28,9 @@ There will be a possibility:
 ##
 ## Deployment <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="60" height="40" /> <br>
 Full process of deployment (CI/CD) will be implemented. The simulator will be available on EC2 instance. <br> 
-Continuous Monitoring - Prometheus & Grafana
+Continuous Monitoring - Prometheus & Grafana <br>
+
+## How to Contribute ![GitHub-Mark-32px](https://user-images.githubusercontent.com/33324211/178342450-e92eeafe-eff1-4e30-8dca-469552476024.png)
+1. Clone repo and create a new branch: `$ git checkout https://github.com/wojtekw0703/ServiceNow-simulator.git -b name_for_new_branch`.
+2. Make changes and test
+3. Submit Pull Request with comprehensive description of changes
