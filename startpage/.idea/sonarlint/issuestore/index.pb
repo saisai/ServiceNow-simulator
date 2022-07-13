@@ -60,3 +60,11 @@ I
 0templates/coordinator/simulator-coordinator.html,2\7\27d6fe074cc9fce98c854260cf94676cb19f2fee
 Z
 *templates/employee/simulator-employee.html,a\0\a05550c56d04e37261e2a463bba40be9b2590115
+D
+static/js/scripts.js,4\d\4dc6053ee96817d0caa0ea943ea6d475fa3593b2
+I
+templates/core/about.html,5\0\50733f9ef3e7d7cb60e69cd380362f67a8d018cc
+K
+templates/core/contact.html,4\c\4cd7ab155de775fb6e55f874e0ccafd4ba955ab1
+L
+templates/core/page-404.html,a\f\afd47d5fbf743752095288a4cd38908d7929ce05

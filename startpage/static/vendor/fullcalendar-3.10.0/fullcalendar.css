@@ -856,7 +856,7 @@ NOTE: use percentage font sizes or else old IE chokes
 
 .fc-view,
 .fc-view > table {
-  /* so dragged elements can be above the view's main element */
+  /* so dragged elements can be above the view's startpage element */
   position: relative;
   z-index: 1; }
 

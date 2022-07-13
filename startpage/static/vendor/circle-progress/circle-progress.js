@@ -178,7 +178,7 @@
     radius: 0.0,
 
     /**
-     * Fill of the main arc. Automatically calculated, depending on [this.fill]{@link CircleProgress#fill} option.
+     * Fill of the startpage arc. Automatically calculated, depending on [this.fill]{@link CircleProgress#fill} option.
      * @protected
      * @type {string|CanvasGradient|CanvasPattern}
      */

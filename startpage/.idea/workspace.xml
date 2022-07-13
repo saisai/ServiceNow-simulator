@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25993c61-39b9-43ab-a714-ca039e398e4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dbdata/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/users_db/django_session.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/users_db/django_session.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/users_db/welcomepage_user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/users_db/welcomepage_user.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/core/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/core/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startpage/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/startpage/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startpage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/startpage/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startpage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/startpage/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startpage/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/startpage/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/circle-progress/circle-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/circle-progress/circle-progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/fullcalendar-3.10.0/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fullcalendar-3.10.0/fullcalendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/fullcalendar-3.10.0/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fullcalendar-3.10.0/fullcalendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/fullcalendar-3.10.0/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/fullcalendar-3.10.0/fullcalendar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/lightbox2/dist/js/lightbox-plus-jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/lightbox2/dist/js/lightbox-plus-jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/core/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,10 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/core/index.html">
+        <entry file="file://$PROJECT_DIR$/templates/core/page-404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="225" column="98" selection-start-line="225" selection-start-column="98" selection-end-line="225" selection-end-column="98" />
+            <state relative-caret-position="-48">
+              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -212,11 +222,6 @@
           <expand>
             <path>
               <item name="startpage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startpage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="startpage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startpage" type="462c0819:PsiDirectoryNode" />
               <item name="startpage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,12 +389,12 @@
       <workItem from="1657461781910" duration="129000" />
       <workItem from="1657461997317" duration="4825000" />
       <workItem from="1657468027435" duration="216000" />
-      <workItem from="1657468454331" duration="17651000" />
+      <workItem from="1657468454331" duration="20135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231549000" />
+    <option name="totallyTimeSpent" value="234033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,9 +407,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15946667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15946667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,7 +423,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50164294" side_tool="true" weight="0.240991" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32998884" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49835706" visible="true" weight="0.2251951" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49835706" visible="true" weight="0.2251951" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32998884" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3277592" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -471,9 +475,6 @@
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/core/page-404.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/core/page-500.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -792,8 +793,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/core/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="225" column="98" selection-start-line="225" selection-start-column="98" selection-end-line="225" selection-end-column="98" />
+        <state relative-caret-position="805">
+          <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/core/page-404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
