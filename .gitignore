@@ -2,3 +2,4 @@
 .IaaC/Terraform/.terraform/*
 .IaaC/Terraform/.terraform.lock.hcl
 .IaaC/CloudFormation/.venv
+.startpage/.dbdata/
