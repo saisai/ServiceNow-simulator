@@ -1,21 +1,33 @@
 provider "aws" {
-  access_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-  secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  access_key = "XXXXXXXXXXXXXX"
+  secret_key = "XXXXXXXXXXXXXX"
   region     = "us-east-1"
 }
 
-# ---------------------------------------<MAIN>----------------------------------------#
-resource "aws_instance" "ServiceNow-simulator" {
-  ami             = "ami-04505e74c0741db8d" #Amazon Machine Image
-  instance_type   = "t2.small"              #Instance type describing CPU, Architecture, Memory, Storage, Pricing
+
+# ---------------------------------------<Jenkins>-----------------------------------------#
+resource "aws_instance" "Jenkins-ServiceNow-simulator" {
+  ami             = "ami-04505e74c0741db8d"
+  instance_type   = "t2.micro"
   key_name        = aws_key_pair.key.key_name
   security_groups = ["security_group_servicenow"]
 }
-# ---------------------------------------</MAIN>----------------------------------------#
+# ---------------------------------------</Jenkins>----------------------------------------#
+
+
+# ---------------------------------------<Production>--------------------------------------#
+resource "aws_instance" "Prod-ServiceNow-simulator" {
+  ami             = "ami-04505e74c0741db8d"
+  instance_type   = "t2.small"
+  key_name        = aws_key_pair.key.key_name
+  security_groups = ["security_group_servicenow"]
+}
+# ---------------------------------------</Production>-------------------------------------#
+
 
 resource "aws_key_pair" "key" {
   key_name   = "servicenow-simulator"
-  public_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  public_key = "XXXXXXX"
 }
 
 resource "aws_security_group" "security_group_servicenow" {
@@ -28,6 +40,14 @@ resource "aws_security_group" "security_group_servicenow" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
 
   #Outgoing traffic
   egress {
