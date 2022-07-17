@@ -14,7 +14,7 @@ There will be a possibility:
 
 
 ## Technologies & Tools & Languages 🛠️ <br>
-- Python <br>
+- Python <br>  
 - Django <br>
 - JavaScript <br>
 - Docker <br>
@@ -23,6 +23,8 @@ There will be a possibility:
 - MySQL <br>
 - Prometheus <br>
 - Grafana <br>
+- Terraform <br>
+- CloudFormation <br>
 ##
 <b> Architecture:</b> microservices (startpage, admin, user). REST API was implemented in the project
 ##
