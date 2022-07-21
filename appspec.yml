@@ -3,6 +3,18 @@ os: linux
 files:
  - source: .
    destination: /home/ubuntu/ServiceNow-simulator
+permissions:
+  - object: /home/ubuntu/ServiceNow-simulator/scripts/install_app_dependencies.sh
+    mode: 755
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+permissions:
+  - object: /home/ubuntu/ServiceNow-simulator/scripts/start_server.sh
+    mode: 755
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
 hooks:
   AfterInstall:
    - location: /home/ubuntu/ServiceNow-simulator/scripts/install_app_dependencies.sh
