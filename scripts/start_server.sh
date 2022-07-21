@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /home/ubuntu/ServiceNow-simulator
+cd /home/ubuntu/ServiceNow-simulator/startpage
 source environment/bin/activate
-supervisord -c supervisord.conf
+supervisord -c /home/ubuntu/ServiceNow-simulator/supervisord.conf
