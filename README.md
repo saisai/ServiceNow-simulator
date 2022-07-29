@@ -30,8 +30,7 @@ There will be a possibility:
 <b> Architecture:</b> microservices (startpage, admin, user). REST API was implemented in the project
 ##
 ## Deployment & Infrastructure <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="60" height="40" /> <br>
-![Diagram](https://user-images.githubusercontent.com/33324211/181792817-ac3e7cf4-63a7-4971-8a29-71129efc3729.png)
-
+![ServiceNow-simulator-diagram](https://user-images.githubusercontent.com/33324211/181798693-8e2619cc-efe2-4b38-ad0b-b83d4fcdf5ec.png)
 
 ## How to Contribute ![GitHub-Mark-32px](https://user-images.githubusercontent.com/33324211/178342450-e92eeafe-eff1-4e30-8dca-469552476024.png)
 1. Clone repo and create a new branch: `$ git checkout https://github.com/wojtekw0703/ServiceNow-simulator.git -b name_for_new_branch`.
