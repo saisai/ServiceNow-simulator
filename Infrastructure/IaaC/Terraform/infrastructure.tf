@@ -17,7 +17,7 @@ resource "aws_instance" "ServiceNow-simulator-production" {
 # ---------------------------------------<Monitoring>--------------------------------------#
 resource "aws_instance" "ServiceNow-simulator-monitoring" {
   ami             = "ami-04505e74c0741db8d"
-  instance_type   = "t2.micro"
+  instance_type   = "t2.small"
   key_name        = aws_key_pair.key.key_name
   security_groups = ["security_group_servicenow"]
 }
