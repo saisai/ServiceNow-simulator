@@ -25,7 +25,6 @@ There will be a possibility:
 - Prometheus <br>
 - Grafana <br>
 - Terraform <br>
-- CloudFormation <br>
 ##
 <b> Architecture:</b> microservices (startpage, admin, user). REST API was implemented in the project
 ##
