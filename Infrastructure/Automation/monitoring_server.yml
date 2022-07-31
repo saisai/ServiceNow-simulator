@@ -1,0 +1,8 @@
+---
+- hosts: 3.86.253.69
+  remote_user: ubuntu
+  become: yes
+
+  tasks:
+    - name: Upgrade all apt packages
+      apt: upgrade=dist force_apt_get=yes
