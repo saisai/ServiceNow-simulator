@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = "AKIAQMNBOBOR2W76GH6X"
-  secret_key = "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"
+  access_key = "XXXXXXXXXXXXX"
+  secret_key = "XXXXXXXXXXXXX"
   region     = "us-east-1"
 }
 
@@ -25,7 +25,7 @@ resource "aws_instance" "ServiceNow-simulator-mon" {
 
 resource "aws_key_pair" "key" {
   key_name   = "servicenow-simulator"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZkn/ncB5YVQMSCLjMcpgfpTVCNTkdFAAz5oPSpXDkQLJzN+mFIroOchoNnul7BFFqwaOUirJu6rma7oIc1hH+4472HqdqpM01zhv329LsSXx2B70tQ7b1hCTg9eljVzVowmO8w+442e1wzeWktqzXp6BxPgoBYPkjKRKKUoKBwhIeCzV+tlECE3Ijt7p7Y6CQp3RTvnxJsM0meS8VchvB1daEpvxPJ7s2pgr+Vuhlj0y4wK6xMbEJJspU8Zf4qDb9q+A7mhPbuBih0NsLcqd6KXQLgbKxLpu8rT5NduQyeepIN9sD4Y9eDo7/ko3SaTU3MhZoxq+CR985w1Vddsqx rsa-key-20220715"
+  public_key = "XXXXXXXXXXXXXXX"
 }
 
 resource "aws_security_group" "security_group_servicenow" {
