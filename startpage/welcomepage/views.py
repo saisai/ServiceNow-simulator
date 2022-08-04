@@ -14,6 +14,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
 from rest_framework.authentication import TokenAuthentication
+from .forms import ticketForm, newQueueForm
 
 
 def index(request):
@@ -136,7 +137,11 @@ def coordinator_team(request):
 
 @login_required(login_url="/sign-in")
 def coordinator_tickets(request):
-    return render(request, 'coordinator/coordinator-create-ticket.html')
+    form = ticketForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'coordinator/coordinator-create-ticket.html', context)
 
 
 @login_required(login_url="/sign-in")
@@ -152,6 +157,49 @@ def coordinator_profile(request):
 @login_required(login_url="/sign-in")
 def coordinator_password(request):
     return render(request, 'coordinator/coordinator-password.html')
+
+
+def ticket_creating(request):
+    if request.method == 'POST':
+        form = ticketForm(request.POST)
+        if form.is_valid():
+            messages.success(request, 'Ticket created')
+            CI_name = form.cleaned_data.get('CI_name')
+            default_queue = form.cleaned_data.get('default_queue')
+            target_queue = form.cleaned_data.get('target_queue')
+            SLA_schedule = form.cleaned_data.get('SLA_schedule')
+            short_description = form.cleaned_data.get('short_description')
+            description = form.cleaned_data.get('description')
+            print("========================================")
+            print(CI_name+", "+short_description+","+description+", "+default_queue+", "+target_queue+", "+SLA_schedule)
+            print("========================================")
+        else:
+            messages.error(request, 'Not valid form. Please try again')
+            return redirect('/coordinator/tickets')
+        return redirect('/coordinator/tickets')
+
+
+def queue_creating(request):
+    if request.method == 'POST':
+        form = newQueueForm(request.POST)
+        if form.is_valid():
+            messages.success(request, 'New queue has been created')
+            formQueueName = form.cleaned_data.get('formQueueName')
+            print("========================================"+formQueueName)
+        else:
+            messages.error(request, 'Not valid form. Please try again')
+            return redirect('/coordinator/tickets')
+    return redirect('/coordinator/tickets')
+
+
+def profile_update(request):
+    if request.method == 'POST':
+        firstName = request.POST.get('inputFirstName')
+        lastName = request.POST.get('inputLastName')
+        email = request.POST.get('email')
+        messages.success(request, 'Profile has been updated successfully')
+        print("========================================"+email)
+    return redirect('/coordinator/profile')
 
 # =======================</Coordinator>============================= #
 

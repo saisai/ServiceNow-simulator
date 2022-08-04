@@ -83,7 +83,8 @@
                             <div class="collapse" id="collapsePages" data-bs-parent="#accordionSidenav">
                                 <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPagesMenu">
                                     <a class="nav-link" href="{% url 'coordinator_team' %}">Groups & Members</a>
-                                    <a class="nav-link" href="{% url 'coordinator_tickets' %}">Tickets</a>
+                                    <a class="nav-link" href="{% url 'coordinator_tickets' %}">Create a ticket and queue</a>
+                                    <a class="nav-link" href="{% url 'coordinator_tickets' %}">Tickets list</a>
                                 </nav>
                             </div>
                             <!-- Sidenav Accordion (Applications)-->
@@ -134,5 +135,11 @@
         <script src="{% static '/js/litepicker.js' %}"></script>
             <script src="https://unpkg.com/easymde/dist/easymde.min.js" crossorigin="anonymous"></script>
         <script src="js/markdown.js"></script>
+        <script>
+         var message_ele = document.getElementById("msg");
+            setTimeout(function(){
+               message_ele.style.display = "none";
+            }, 3000);
+    </script>
     </body>
 </html>

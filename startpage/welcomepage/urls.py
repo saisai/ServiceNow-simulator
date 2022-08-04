@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, re_path
 from .views import NewAccountView, SignInView, coordinator_team, coordinator_tickets, \
-     coordinator_statistics, coordinator_profile, coordinator_password, employee_profile, employee_password
+     coordinator_statistics, coordinator_profile, coordinator_password, employee_profile, employee_password, ticket_creating, queue_creating, profile_update
 from . import views
 urlpatterns = [
      path('', views.index, name='index'),
@@ -27,4 +27,7 @@ urlpatterns = [
      path('employee/simulator', views.employee_simulator, name='employee_simulator'),
      path('employee/profile', views.employee_profile, name='employee_profile'),
      path('employee/password', views.employee_password, name='employee_password'),
+     path('coordinator/ticket_creating', views.ticket_creating, name='ticket_creating'),
+     path('coordinator/queue_creating', views.queue_creating, name='queue_creating'),
+     path('coordinator/profile_update', views.profile_update, name='profile_update'),
 ]

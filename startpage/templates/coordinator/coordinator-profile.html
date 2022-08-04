@@ -39,22 +39,30 @@
                             </div>
                             <div class="col-xl-8">
                                 <!-- Account details card-->
+                                             {% if messages %}
+                            {% for message in messages %}
+                           <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
+                                {{ message }}
+                           </div>
+                                        {% endfor %}
+                                        {% endif %}
                                 <div class="card mb-4">
                                     <div class="card-header">Account Details</div>
                                     <div class="card-body">
-                                        <form>
+                                         <form action="profile_update" method="post">
                                             <!-- Form Row-->
                                             <div class="row gx-3 mb-3">
                                                 <!-- Form Group (first name)-->
                                                 {% if request.user.is_authenticated %}
+                                                {% csrf_token %}
                                                 <div class="col-md-6">
                                                     <label class="small mb-1" for="inputFirstName">First name</label>
-                                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="{{ user.name }}" />
+                                                    <input class="form-control" id="inputFirstName" type="text" name="inputFirstName" placeholder="Enter your first name" value="{{ user.name }}" />
                                                 </div>
                                                 <!-- Form Group (last name)-->
                                                 <div class="col-md-6">
                                                     <label class="small mb-1" for="inputLastName">Last name</label>
-                                                    <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="{{ user.surname }}" />
+                                                    <input class="form-control" id="inputLastName" type="text" name="inputLastName" placeholder="Enter your last name" value="{{ user.surname }}" />
                                                 </div>
                                             </div>
                                             <!-- Form Row        -->
@@ -64,7 +72,7 @@
                                             <!-- Form Group (email address)-->
                                             <div class="mb-3">
                                                 <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                                                <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="{{ user.email }}" />
+                                                <input class="form-control" id="inputEmailAddress" type="email" name="email" placeholder="Enter your email address" value="{{ user.email }}" />
                                             </div>
                                                     <div class="mb-3">
                                                 <label class="small mb-1" for="inputEmailAddress">Joined</label>
@@ -74,7 +82,7 @@
                                             <div class="row gx-3 mb-3">
                                             </div>
                                             <!-- Save changes button-->
-                                            <button class="btn btn-primary" type="button">Save changes</button>
+                                            <button class="btn btn-primary" type="submit">Save changes</button>
                                             {% endif %}
                                         </form>
                                     </div>
